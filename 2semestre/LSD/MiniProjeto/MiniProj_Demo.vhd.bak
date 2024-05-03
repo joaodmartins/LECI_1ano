@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity MiniProj_Demo is
+	port(
+		SW   : in  std_logic_vector(1 downto 0);
+		HEX0 : out std_logic_vector(6 downto 0)
+	);
+end MiniProj_Demo;
+
+architecture Shell of MiniProj_Demo is
+begin
+	selectprog : entity work.SelectProgram(Behavioral)
+	port map(
+		binInput => SW(1 downto 0),
+		decOut_n => HEX0(6 downto 0)
+	);
+end Shell;

@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/simulation/questa
+Ealu16
+Z1 w1713868755
+Z2 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R0
+Z5 8C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16.vhd
+Z6 FC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16.vhd
+l0
+L5 1
+VQPYcJi62g[Hn6[<l=[72V0
+!s100 1_cZ^i7Z=T7ga6SA>zEf:2
+Z7 OL;C;2023.3;77
+31
+Z8 !s110 1713868907
+!i10b 1
+Z9 !s108 1713868907.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16.vhd|
+Z11 !s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+Z14 DEx4 work 5 alu16 0 22 QPYcJi62g[Hn6[<l=[72V0
+!i122 0
+l17
+L13 43
+Vi9Tb=0]lhg1Kd9G?>bHKo2
+!s100 l1I2eQiAQ:W7E`9<dmh_G3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ealu16_tb
+Z15 w1713866785
+R3
+R4
+!i122 1
+R0
+Z16 8C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16_Tb.vhd
+Z17 FC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16_Tb.vhd
+l0
+L4 1
+V5;F5i>JfA2U>Z6fzA6M;13
+!s100 a3NeY[^>MZ8Jg_gaB1eAz1
+R7
+32
+Z18 !s110 1713868927
+!i10b 1
+Z19 !s108 1713868927.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16_Tb.vhd|
+!s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16_Tb.vhd|
+!i113 0
+Z21 o-work work
+R13
+Astimulus
+R2
+R14
+R3
+R4
+DEx4 work 8 alu16_tb 0 22 5;F5i>JfA2U>Z6fzA6M;13
+!i122 1
+l15
+L7 44
+Vz>39lf6S<OEA85e=Cg]4b1
+!s100 APG52JTMTaC7l`8RaiNgj0
+R7
+32
+R18
+!i10b 1
+R19
+R20
+Z22 !s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte3/ALU16_Tb.vhd|
+!i113 0
+R21
+R13

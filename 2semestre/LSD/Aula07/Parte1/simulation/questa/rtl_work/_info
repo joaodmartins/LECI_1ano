@@ -1,0 +1,108 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/simulation/questa
+T_opt
+!s110 1713861150
+VJUUnHB34]_^hFb_cGnA5Q3
+04 11 8 work dec2_4en_tb stimulus 1
+=1-f854f6624a29-6627721d-2b3-2ae0
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Edec2_4en
+Z2 w1713860233
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z5 8C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En.vhd
+Z6 FC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En.vhd
+l0
+L4 1
+Vo8kY]@J<k^WiB70dP9^2U2
+!s100 =e^jC^YcAN6W:Q]cfAloZ3
+Z7 OL;C;2023.3;77
+31
+Z8 !s110 1713860395
+!i10b 1
+Z9 !s108 1713860395.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En.vhd|
+Z11 !s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En.vhd|
+!i113 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+Z14 DEx4 work 8 dec2_4en 0 22 o8kY]@J<k^WiB70dP9^2U2
+!i122 0
+l11
+L10 18
+VK^c_JeCPf>PLgID56@dX12
+!s100 TRR9ZGD@R<kL]jNf9ckTU2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Edec2_4en_tb
+Z15 w1713860305
+R3
+R4
+!i122 4
+R1
+Z16 8C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En_Tb.vhd
+Z17 FC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En_Tb.vhd
+l0
+L4 1
+VT>z;6FQgaOX54gi1H3?H`2
+!s100 ClR63596Jina<=a58hS1G3
+R7
+32
+Z18 !s110 1713860626
+!i10b 1
+Z19 !s108 1713860626.000000
+Z20 !s90 -reportprogress|300|-work|work|C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En_Tb.vhd|
+Z21 !s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte1/Dec2_4En_Tb.vhd|
+!i113 0
+Z22 o-work work
+R13
+Astimulus
+R14
+R3
+R4
+DEx4 work 11 dec2_4en_tb 0 22 T>z;6FQgaOX54gi1H3?H`2
+!i122 4
+l16
+L7 34
+V_kcm[?LdBYe]OSzigD5`R2
+!s100 3F49IVbmzoY;;l4KPmXQ82
+R7
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R13

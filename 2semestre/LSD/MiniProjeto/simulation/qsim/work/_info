@@ -1,0 +1,222 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+Z1 !s12c _opt
+R0
+R1
+R0
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/joaod/Desktop/2semestre/LSD/MiniProjeto/simulation/qsim
+T_opt
+!s110 1713252056
+VE=PVD=[<];ERGmOVQYkZ?0
+04 28 21 work selecao_programa_vhd_vec_tst selecao_programa_arch 1
+=1-f854f6624a29-661e26d7-1ed-4e00
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM10U2 
+Z5 o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+R2
+T_opt1
+!s110 1713256534
+VGC9fK8`2I3iDJLBAzOYYM3
+04 25 18 work selectprogram_vhd_vec_tst selectprogram_arch 1
+=1-f854f6624a29-661e3855-1a4-9c0
+R0
+R3
+R4
+R5
+R6
+n@_opt1
+R7
+Eselecao_programa
+Z8 w1713252052
+Z9 DPx4 ieee 16 vital_primitives 0 22 Y]H?Y_]z4@VoaWAGJ=36m1
+Z10 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 JFD354ZMY?;ZG1UUQ_P^@1
+Z11 DPx4 ieee 12 vital_timing 0 22 6STbz=m1W[80IE06h_el^0
+Z12 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z13 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+Z14 DPx10 cycloneive 21 cycloneive_components 0 22 :CA=Yg0R^TdJ3>^OGfeMR2
+!i122 2
+R2
+Z15 8MiniProj_Demo.vho
+Z16 FMiniProj_Demo.vho
+l0
+Z17 L35 1
+VAk^le_MOP[W4cOI87;N0j0
+!s100 W[<iVTJ727]m8Y8MAjAh@2
+Z18 OL;C;2023.3;77
+32
+Z19 !s110 1713252054
+!i10b 1
+Z20 !s108 1713252054.000000
+Z21 !s90 -work|work|MiniProj_Demo.vho|
+Z22 !s107 MiniProj_Demo.vho|
+!i113 0
+Z23 o-work work
+Z24 tExplicit 1 CvgOpt 0
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+DEx4 work 16 selecao_programa 0 22 Ak^le_MOP[W4cOI87;N0j0
+!i122 2
+l72
+Z25 L42 209
+VYMfZWIM:3d@Zg8FM;8P?72
+!s100 RZb8F:P7d_j^6UL_CL<K;1
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R23
+R24
+Eselecao_programa_vhd_vec_tst
+Z26 w1713252051
+R12
+R13
+!i122 3
+R2
+Z27 8Selecao_Programa.vwf.vht
+Z28 FSelecao_Programa.vwf.vht
+l0
+Z29 L32 1
+VGi[R043=^QVf3oz?59iV63
+!s100 ]k7aKQm6fX:dk^Y;3T08L2
+R18
+32
+R19
+!i10b 1
+R20
+Z30 !s90 -work|work|Selecao_Programa.vwf.vht|
+Z31 !s107 Selecao_Programa.vwf.vht|
+!i113 0
+R23
+R24
+Aselecao_programa_arch
+R12
+R13
+DEx4 work 28 selecao_programa_vhd_vec_tst 0 22 Gi[R043=^QVf3oz?59iV63
+!i122 3
+l45
+L34 437
+Vk3404;U=;YL?fh0hZBJfF3
+!s100 E=g`jj_`8R4M33mUgO10b2
+R18
+32
+R19
+!i10b 1
+R20
+R30
+R31
+!i113 0
+R23
+R24
+Eselectprogram
+Z32 w1713256530
+R9
+R10
+R11
+R12
+R13
+R14
+!i122 4
+R2
+R15
+R16
+l0
+R17
+VYi]=;]kdQXgZBz^=ezA723
+!s100 0b]eC5J3J:JlfG2c=?HeX1
+R18
+32
+Z33 !s110 1713256532
+!i10b 1
+Z34 !s108 1713256532.000000
+R21
+R22
+!i113 0
+R23
+R24
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+DEx4 work 13 selectprogram 0 22 Yi]=;]kdQXgZBz^=ezA723
+!i122 4
+l72
+R25
+VE6>lh2m9;ggAV^OjeinRT3
+!s100 HnbjVzHZREe4F^WS;kd>22
+R18
+32
+R33
+!i10b 1
+R34
+R21
+R22
+!i113 0
+R23
+R24
+Eselectprogram_vhd_vec_tst
+Z35 w1713256528
+R12
+R13
+!i122 5
+R2
+Z36 8SelectProgram.vwf.vht
+Z37 FSelectProgram.vwf.vht
+l0
+R29
+VJ6_eQzeigL9EYa6FP^1DM0
+!s100 B`9ZBN_LmC1JBdNRnSH780
+R18
+32
+R33
+!i10b 1
+R34
+Z38 !s90 -work|work|SelectProgram.vwf.vht|
+Z39 !s107 SelectProgram.vwf.vht|
+!i113 0
+R23
+R24
+Aselectprogram_arch
+R12
+R13
+DEx4 work 25 selectprogram_vhd_vec_tst 0 22 J6_eQzeigL9EYa6FP^1DM0
+!i122 5
+l45
+L34 443
+VKTi=K=H>zYijMUH7IjSB=1
+!s100 <:T]JO9RHPoA6C=Fz:7z?1
+R18
+32
+R33
+!i10b 1
+R34
+R38
+R39
+!i113 0
+R23
+R24

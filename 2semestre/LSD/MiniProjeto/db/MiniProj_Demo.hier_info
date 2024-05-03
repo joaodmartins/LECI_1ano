@@ -1,0 +1,84 @@
+|MiniProj_Demo
+CLOCK_50 => programexecution:progexe.clk
+SW[0] => selectprogram:selectprog.binInput[0]
+SW[0] => programexecution:progexe.binInput[0]
+SW[1] => selectprogram:selectprog.binInput[1]
+SW[1] => programexecution:progexe.binInput[1]
+LEDR[0] << programexecution:progexe.red_leds[0]
+LEDR[1] << programexecution:progexe.red_leds[1]
+LEDR[2] << programexecution:progexe.red_leds[2]
+LEDR[3] << programexecution:progexe.red_leds[3]
+LEDG[0] << programexecution:progexe.green_leds[0]
+LEDG[1] << programexecution:progexe.green_leds[1]
+LEDG[2] << programexecution:progexe.green_leds[2]
+LEDG[3] << programexecution:progexe.green_leds[3]
+HEX0[0] << selectprogram:selectprog.decOut_n[0]
+HEX0[1] << selectprogram:selectprog.decOut_n[1]
+HEX0[2] << selectprogram:selectprog.decOut_n[2]
+HEX0[3] << selectprogram:selectprog.decOut_n[3]
+HEX0[4] << selectprogram:selectprog.decOut_n[4]
+HEX0[5] << selectprogram:selectprog.decOut_n[5]
+HEX0[6] << selectprogram:selectprog.decOut_n[6]
+
+
+|MiniProj_Demo|SelectProgram:selectprog
+binInput[0] => Equal0.IN1
+binInput[0] => Equal1.IN0
+binInput[0] => Equal2.IN1
+binInput[0] => Equal3.IN1
+binInput[1] => Equal0.IN0
+binInput[1] => Equal1.IN1
+binInput[1] => Equal2.IN0
+binInput[1] => Equal3.IN0
+decOut_n[0] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[1] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[2] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[3] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[4] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[5] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[6] <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MiniProj_Demo|ProgramExecution:progexe
+clk => blink_state_green.CLK
+clk => blink_state_red.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+binInput[0] => Equal1.IN0
+binInput[0] => Equal2.IN1
+binInput[0] => Equal3.IN1
+binInput[1] => Equal1.IN1
+binInput[1] => Equal2.IN0
+binInput[1] => Equal3.IN0
+red_leds[0] <= red_leds[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+red_leds[1] <= red_leds[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+red_leds[2] <= red_leds[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+red_leds[3] <= red_leds[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+green_leds[0] <= green_leds[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+green_leds[1] <= green_leds[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+green_leds[2] <= green_leds[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+green_leds[3] <= green_leds[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.numeric_std.all;
+
+entity ProgramExecution is
+    port(
+        binInput : in std_logic_vector(1 downto 0);
+        red_leds : out std_logic_vector(3 downto 0);
+		  green_leds : out std_logic_vector(3 downto 0)
+    );
+end entity ProgramExecution;
+
+architecture Behavioral of ProgramExecution is
+begin
+    redOut <= "1111" when (binInput = "00") else 
+				  "1111" when (binInput = "01") else
+				  "0000" when (binInput = "10") else
+				  "0000" when (binInput = "11");
+	 greenOut <= "1111" when (binInput = "00") else 
+				  "0000" when (binInput = "01") else
+				  "1111" when (binInput = "10") else
+				  "0000" when (binInput = "11");
+end architecture Behavioral;

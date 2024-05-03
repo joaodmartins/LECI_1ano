@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Apr 16 11:58:57 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+Revision Name : MiniProj_Demo
+Top-level Entity Name : MiniProj_Demo
+Family : Cyclone IV E
+Total logic elements : 53
+    Total combinational functions : 53
+    Dedicated logic registers : 25
+Total registers : 25
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

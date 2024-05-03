@@ -1,0 +1,111 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/simulation/questa
+T_opt
+!s110 1713863710
+VDj>d19?IcFUFeh0S^[<iY3
+04 17 8 work binudcntenrst4_tb stimulus 1
+=1-f854f6624a29-66277c1d-3c1-4bcc
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+Ebinudcntenrst4
+Z2 w1713863095
+Z3 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z4 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z5 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 0
+R1
+Z6 8C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4.vhd
+Z7 FC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4.vhd
+l0
+L4 1
+VE60YkP=SRJVBK@b]`CRXV2
+!s100 hkPY=]T<=_[5OnjA]dIXN1
+Z8 OL;C;2023.3;77
+31
+Z9 !s110 1713863657
+!i10b 1
+Z10 !s108 1713863657.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4.vhd|
+Z12 !s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4.vhd|
+!i113 0
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R3
+R4
+R5
+Z15 DEx4 work 14 binudcntenrst4 0 22 E60YkP=SRJVBK@b]`CRXV2
+!i122 0
+l14
+L12 19
+V2TENk5_Y>ZBJ`4aTF9=l30
+!s100 =E^zCBR;8;MKa3E1gaGo[1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ebinudcntenrst4_tb
+Z16 w1713863623
+R4
+R5
+!i122 1
+R1
+Z17 8C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4_Tb.vhd
+Z18 FC:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4_Tb.vhd
+l0
+L5 1
+V@Y0oabPiPc8;zG_6zA2NL0
+!s100 l073=?_XoOBXKKNh8EID62
+R8
+32
+Z19 !s110 1713863682
+!i10b 1
+Z20 !s108 1713863682.000000
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4_Tb.vhd|
+Z22 !s107 C:/Users/joaod/Desktop/2semestre/LSD/Aula07/Parte2/BinUDCntEnRst4_Tb.vhd|
+!i113 0
+Z23 o-work work
+R14
+Astimulus
+R3
+R15
+R4
+R5
+DEx4 work 17 binudcntenrst4_tb 0 22 @Y0oabPiPc8;zG_6zA2NL0
+!i122 1
+l15
+L9 45
+VKI[`[7oH3c5RC2:T_EaL]3
+!s100 b_jKnQQna[^c3>[SZMn;Z2
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R23
+R14
