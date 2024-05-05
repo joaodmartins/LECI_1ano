@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capitulo 3</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/scriptcap3.js"></script>
+    </head>
+    <body>
+        <section class="header2">
+            <nav style="height:25px;" class="navbar">
+                <a href="index.html"><img src="images/whale_icon.png" alt="" style="width: 70px;"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+						<li><a href="index.html">HOME</a></li>
+                        <li><a href="Cap2.html">CLASSIFICAÇÃO DA VIDA MARINHA</a>
+							<div class="submenu">
+								<ul>
+									<li><a href="Cap2.html#peixes">Peixes</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#peixes-osseos">Peixes Ósseos</a></li>
+												<li><a href="Cap2.html#peixes-cartilaginosos">Peixes Cartilaginosos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="Cap2.html#mamiferos">Mamíferos</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#cetaceos">Cetáceos</a></li>
+												<li><a href="Cap2.html#penipedes">Penípedes</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="Cap2.html#invertebrados">Invertebrados</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#moluscos">Moluscos</a></li>
+												<li><a href="Cap2.html#crustaceos">Crustáceos</a></li>
+												<li><a href="Cap2.html#equinodermos">Equinodermos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="Cap2.html#algas">Algas</a></li>
+									<li><a href="Cap2.html#relacoes">Relações Ecológicas</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#relacoes-intra">Relações Intraespecíficas</a></li>
+												<li><a href="Cap2.html#relacoes-inter">Relações Interespecíficas</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="Cap3.html">ECOSSISTEMAS MARINHOS</a>
+							<ul class="submenu">
+								<li><a href="Cap3.html#principais-eco">Principais ecossistemas</a></li>
+								<li><a href="Cap3.html#zonas-profundas">Profundezas</a><i class="fa fa-angle-right"></i>
+									<div class="subsubmenu">
+										<ul>
+											<li><a href="Cap3.html#twilightzone">Zona <i>Twilight</i></a></li>
+											<li><a href="Cap3.html#batial">Zona Batial</a></li>
+											<li><a href="Cap3.html#abissal">Zona Abissal</a></li>
+											<li><a href="Cap3.html#hadal">Zona Hadal</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li><a href="Cap4.html">IMPACTOS AMBIENTAIS</a>
+							<ul class="submenu">
+								<li><a href="Cap4.html#problemas">Problemas ambientais</a></li>
+								<li><a href="Cap4.html#solucoes">Medidas de conservação</a></li>
+							</ul>
+						</li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            </nav>
+        </section>
+		<section class="ecos-inicio">
+				<h1 class="titulo-ecos">Ecossistemas marinhos</h1>
+				<p class="principal-ecos"> Os ecossistemas marinhos apresentam características únicas quando comparados com ecossistemas terrestres por causa
+				dos seus distintos fatores físicos, como a salinidade e temperatura das águas, e também luz solar disponível. Porém, uma das principais característcas, 
+				no que toca a influênciar o meio e os seres vivos que lá habitam, é a profundeza das águas, acentuando ainda mais a sua unicidade.</p>
+				<h2 id ="principais-eco">Principais ecossistemas marinhos</h2>
+		</section>
+		<section class="ecos-marinhos">
+			<div class="zonas-mar-l">
+				<img src="images/open-sea.jpg" alt="Mar aberto">
+				<div class="texto-overlay">
+					<h3>Mar Aberto</h3>
+					<p>O mar aberto não passa dos 150 metros de profundidade e pertence a uma zona bem iluminada por radiação solar, a zona eufótica, povoada por espécies 
+				fotossintéticas e animais mais conhecidos, como as baleias e algumas alforrecas.</p>
+				</div>
+			</div>
+			<div class="zonas-mar-r">
+				<img src="images/coral-reef.jpg" alt="Recife de corais">
+				<div class="texto-overlay">
+					<h3>Recife de corais</h3>
+					<p>Recifes de corais, são ecossistemas quentes tropicais que apresentam uma grande biodiversidade. São conhecidos pelas suas grandes estruturas formadas apartir 
+				de esqueletos de carbonato de cálcio de certas espécies de corais e outros animais, que servem como abrigo a inúmeras espécies de peixes coloridos como 
+				 os peixe-papagaio, estrelas do mar, cobras do mar e diferentes tipos de esponjas.</p>
+				</div>
+			</div>
+		</section> 
+		<section class="ecos-marinhos">
+			<div class="zonas-mar-l">
+				<img src="images/algae-forest.jpg" alt="Floresta de Algas">
+				<div class="texto-overlay">
+					<h3>Floresta de algas</h3>
+					<p> As florestas de algas são normalmente encontradas em águas frias ou temperadas e são zonas marinhas com alta densidade de macro-algas que fornecem alimento
+				 e abrigo a gastrópodes, estrelas marinhas e peixes de potenciais predadores como gaivotas, lontras marinhas e focas.</p>
+				</div>
+			</div>
+			<div class="zonas-mar-r">
+				<img src="images/mangrove.jpeg" alt="Manguezal">
+				<div class="texto-overlay">
+					<h3>Manguezal</h3>
+					<p>Os manguezais são ecossistemas costeiros de transição, únicos pelas suas zonas húmidas onde existe um encontro entre águas de rios com águas do mar.
+				 Apresentam solos salinos, pobres em oxigénio, mas muito ricos em nutrientes e por isso alojam uma vegetação muito diversificada de espécies halófitas, 
+				 espécies terrestres que evoluíram de forma a sobreviver à alta salinidade do mar através de raízes aéreas por onde absorvem oxigénio, como varias espécies de 
+				 mangue e de gramíneas.</p>
+				</div>
+			</div>
+		</section> 
+		<section class="principal-praias">
+			<div class="praias">
+				<h3>Praias anerosas</h3>
+				<p>Praias arenosas são ecossistemas únicos pois apresentam diferenças periódicas de amplitude nas suas marés, o que divde o próprio ecossistema em três faixas:</p>
+				<ul>
+					<li><button onclick="displayText(1)" id="button1">Zona superior</button></li>
+					<li><button onclick="displayText(2)" id="button2">Zona intermédia</button></li>
+					<li><button onclick="displayText(3)" id="button3">Zona inferior</button></li>
+				</ul>
+			</div>
+			<div id="zonaspraia">
+				<p id="texto1" class="hidden">Na zona superior encontram-se espécies marinhas adaptadas à vida terrestre, como as pulgas da praia, alguns caranguejos e vários insetos. 
+				Esta área é a menos exposta às marés e só é submersa em situações menos frequentes de tempestades e marés altas. Os organismos que nela habitam têm de se adaptar 
+				à exposição, por vezes regular, a água doce vinda das chuvas, assim como altos níveis de temperatura e predação de animais terrestres e alguns pássaros como gaivotas.</p>
+				
+				<p id="texto2" class="hidden">A zona intermédia é uma zona menos exposta a marés, povoada principalmente por crustáceos e moluscos que apresentam características para combater
+				a perda de água quando chega a maré baixa, como ouriços e estrelas do mar, cracas, lapas e alguns caranguejos. Estes seres-vivos tem de sobreviver a mudanças drásticas de temperatura, 
+				luz e salinidade, mas também usufruem das várias oportunidades de habitat nas falésias, que sofrem erosão pelas ondas do mar, e por isso alojam cavernas e fendas onde estes 
+				organismos se podem abrigar. </p>
+				
+				<p id="texto3" class="hidden">A zona inferior, onde habitam rincipalmente espécies sem adaptações especiais à vida fora de água, é uma zona que está constatemente 
+				submersa, onde o fundo nunca se encontra muito afastado da superfície e por isso os seus organismos conseguem usufruir bastante da radiação solar, o que resulta numa 
+				alta produção primária, o que faz da zona inferior a localização com maior nível de vida marinha. Nesta zona encontram-se muitas espécies de algas e corais, assim 
+				como algumas estrelas do mar e uma grande variedade de peixes.</p>
+			</div>
+			</section>
+			<section id="zonas-profundas">
+				<hr>
+				<h2>Zonas do Mar Profundo</h2>
+				<p>O mar é divido em várias zonas de acordo com a sua profundidade, as zonas do domínio pelágico. A zona mais superficial é a zona Epipelágica, sendo a 
+				única área considerada como parte da zona eufótica, e não ultrapassa os 200m de profundidade. Após esta zona superficial as caracteristicas do ambiente 
+				começam a mudar drásticamente e por isso as restantes zonas são zonhecidas como parte do mar profundo.</p>
+				<table class="tabela-profundezas">
+					<thead>
+						<tr>
+							<th colspan="5">Profundidade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>200m-1000m</td>
+							<td>1000m-4000m</td>
+							<td>4000m-6000m</td>
+							<td>6000m-</td>
+						</tr>
+						<tr>
+							<td>Zona</td>
+							<td>Mesopelágica</td>
+							<td>Batipelágica</td>
+							<td>Abissopelágica</td>
+							<td>Hadopelágica</td>
+						</tr>
+					</tbody>
+				</table>
+				<p> Uma das princiais razões para a divisão do mar em zonas de acordo com a profudiade é a gradual diminuição de luz solar disponível, a partir dos 200m 
+				de profundidade. Nestas condições a sobrevência de animais fotoautotróficos é quase impossível e por isso estes ecossistemas profundos dependem de organimos 
+				realizadores de quimiossíntese para tomarem o papel de produtores primários, o que por vezes pode ser insuficiente. Por causa destas características 
+				cada vez mais incomuns, muitas espécies das profundezas apresentam qualidades únicas de modo a que a sua sobrevivência nestas profundezas seja possível. 
+				Infelizmente, devido a estas características incomuns, os seres-vivos destas zonas dificimente sobrevivem fora delas durante muito tempo, tornando o estudo 
+				destes animais virtualmente impossível.</p>
+				<hr>
+				<div id="twilightzone">
+					<br>
+					<h2>Zona Mesopelágica</h2>
+					
+					<div class="decricao-zonas">
+						<h3>Características</h3>
+						<p> A zona Mesopelágica, também conhecida como Zona <i>Twilight</i>, ainda recebe luz solar, mas não suficiente para que possa ocorrer fotossíntese, 
+					a sua temperatura nas regiões mais quentes do globo pode atingir os 20ºC e nas regiões mais frias os 4ºC e apresenta uma pressão de 102 atmosferas.</p>
+					</div>
+					<div id="peixes-twilight">
+						<h3>Organismos</h3>
+						<p>Nesta zona encontram-se peixes como o <span class="hover-texto" data-image="images/lanternfish.jpeg">Peixe lanterna</span>, que exibem colorações mais escuras e avermelhadas juntamente com órgãos fotóforos, 
+						órgãos proutores de luz, que iluminam a parte inferior do seu corpo 
+						numa tentative de se camuflarem com os raios de luz provenientes das águas superiores como método de 
+						proteção contra predadores como o <span class="hover-texto" data-image="images/barreleye.jpeg">Peixe-olhos-de-barril</span>, que apresenta olhos tubulares e uma cabeça transparente, o que 
+						lhe proporciona a capacidade de observar tudo o que nada por cima dele.</p>
+						<p>Peixes da Zona <i>Twilight</i> também exibem adaptações à escassez de alimento no seu habitat, como olhos mais sensívies e mandíbulas maiores. 
+						Em alguns predadores também se obervam iscas bioluminescentes que são utilizadas para atrair as suas presas. Um exemplo de um predador 
+						que utiliza esta tática é o <span class="hover-texto" data-image="images/anglerfish.jpg">Tamboril-com-borlas</span>, uma espécie de tamboril que exibe uma isca com aspeto facilmente 
+						confundível pela sua presa por uma minhoca ou até por um crustáceo mais pequeno, que, juntamente com a sua 
+						habilidade de alterar a cor do seu corpo lhe proporciona uma maior facilidade na caça.</p>
+						<div class="zonas-peixes">
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/lanternfish.jpeg" alt="Peixe Lanterna">
+								<div class="texto-overlay">
+									<h3>Peixe Lanterna</h3>
+									<p>Peixes da família <i>Myctophidae</i></p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/barreleye.jpeg" alt="Peixe-olhos-de-barril">
+								<div class="texto-overlay">
+									<h3>Peixe-olhos-de-barril</h3>
+									<p><i>Macropinna microstoma</i></p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/anglerfish.jpg" alt="Tamboril-com-borlas">
+								<div class="texto-overlay">
+									<h3>Tamboril-com-borlas</h3>
+									<p><i>Rhycherus filamentosus</i></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<hr>
+				</div>
+				
+				<div id="batial">
+					<br>
+					<h2>Zona Batipelagica</h2>
+					<div class="decricao-zonas">
+						<h3>Características</h3>
+						<p>Na Zona Batipelagica, ou zona Batial, econtra-se uma temperatura média de 4ºC e pressão de 
+						394 atmosferas. Esta região pertence à zona afótica, onde já não se sente a ação direta da luz solar, e por isso 
+						os organismos que aqui habitam vivem independentemente de seres fotoautotróficos.</p>
+					</div>
+					
+					<div id="peixes-batial">
+						<h3>Organismos</h3>
+						<p>Nesta zona o alimento é muito escasso e por isso muitas das suas espécies evoluiram de modo a terem um metabolismo mais lento, 
+						de forma a conservar mais energia e necessitar de alimento menos frequentemente. Os peixes da Zona Batial apresentam uma dieta bastante
+						 variada que utilizam juntamente com o seu metabolismo lento para ficarem escondidos à espera que caia comida das regiões superiores 
+						 e assim conservam energia que seria gasta à procura de alimento, boms exemplos de peixes com este estilo de predação são o 
+						 <i><span class="hover-texto" data-image="images/Bristlemouth.jpg">Bristlemouth</span></i>, um peixe minúsculo que apresenta uma enorme mandíbula capaz de apanhar presa maior que o seu próprio corpo e 
+						 o <span class="hover-texto" data-image="images/blackswallower.jpeg">Engolidor-Negro</span>, que apesar de ser pequeno, exibe uma capacidade de engolir peixes inteiros com o dobro do deu comprimento devido à 
+						 capacidade que o seu estômago tem de se dilatar.
+						 Alguns dos peixes desta zona também são predadores ativos, tal como o <i><span class="hover-texto" data-image="images/telescopefish.jpg">Telescopefish</span></i> que exibe olhos tubulares, uma forma que lhes 
+						 garante maior captação de luz mesmo a grandes distâncias, para observar mais claramente a bioluminscência das suas presas</p>
+						<div class="zonas-peixes">
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/Bristlemouth.jpg" alt="Bristemouth">
+								<div class="texto-overlay">
+									<h3>Bristlemouth</h3>
+									<p>Peixes da famíla <i>Gonostomatidae</i></p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/blackswallower.jpeg" alt="Engolidor-negro">
+								<div class="texto-overlay">
+									<h3>Engolidor-negro</h3>
+									<p><i>Chiasmodon niger</i></p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/telescopefish.jpg" alt="Telescopefish">
+								<div class="texto-overlay">
+									<h3>Telescopefish</h3>
+									<p><i>Giganturidae Giantura</i></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<hr>
+				</div>
+				
+				<div id="abissal">
+					<br>
+					<h2>Zona Abissopelágica</h2>
+					<div class="decricao-zonas">
+						<h3>Características</h3>
+						<p>A Zona Abissopelágica, ou Zona Abissal,representa cerca de 42% dos fundos oceânicos e apresenta uma temperatura média estre os 2
+						e os 3ºC, uma pressão de 750 atmosferas e está constantemente coberta por escuridão.</p>
+					</div>
+					
+					<div id="peixes-abissal">
+						<h3>Organismos</h3>
+						<p>Na Zona Abissal são encontrados muitos vestigios de matéria orgânica morta que caiem de zonas superiores, o que faz as àguas abissais 
+						muito ricas em sais e nutrientes. Estes vestígios que flutuam pelas águas são chamados de <b>neve marinha</b> e servem de alimento para 
+						inúmeras espécies.<br> A maiorias dos animais que vivem na Zona Abissopelágica são seres demersais, ou seja, apesar de terem capacidade de natação, 
+						permanecem a maior parte da sua vida no fundo do mar, o que aconte porque os organismos Abissais dependem dos processos naturais das zonas 
+						superiores para sobreviver, e esperam até à queda de corpos de animais mortos vindos das zonas acima para se alimentarem.O <span span class="hover-texto" data-image="images/polvodumbo.jpg">Polvo Dumbo</span> 
+						é um exemplo de um organismo demersal, ele utiliza as barbatanas localizadas no topo da sua cabeça 
+						para "pairar" sobre o fundo do oceano em busca de comida e, apesar de ser um polvo, evoluiu de modo a não ter um saco de tinta para melhor combater 
+						as altas pressões do seu habitat. O <span span class="hover-texto" data-image="images/tripodfish.jpg">Peixe-Tripé</span> também é um ser demersal e utiliza as barbatanas de osso saliente, localizadas na parte 
+						inferior do seu corpo, para se apoiar contra-corrente, à espera de uma opurtunidade para empurrar peixes que nadem com a corrente em direção da sua boca.</p>
+						<div class="zonas-peixes">
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/polvodumbo.jpg" alt="Polvo dumbo">
+								<div class="texto-overlay">
+									<h3>Polvo Dumbo</h3>
+									<p><i>Grimpoteuthidae Grimpoteuthis</i></p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<figure>
+									<iframe src="https://www.youtube.com/embed/RAO-dfLXszI?si=ekv6GSUi4L9tAhOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> <!-- código fornecido pelo próprio youtube -->
+									<figcaption>Neve Marinha</figcaption>
+								</figure>
+							</div>
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/tripodfish.jpg" alt="Peixe-tripé">
+								<div class="texto-overlay">
+									<h3>Peixe-Tripé</h3>
+									<p><i>Bathyptrois grallator</i></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<hr>
+				</div>
+				<div id="hadal">
+					<br>
+					<h2>Zona Hadopelágica</h2>
+					<div class="decricao-zonas">
+						<h3>Características</h3>
+						<p>A Zona Hadopelágica, ou Zona Hadal, fa parte da camada mais interior da Zona Abissal e representa as suas depressões topográficas longas e estreitas chamadas de fossas Abissais, zonas de encontro 
+						entre placas tectónicas onde a pressão chega a ser de 1000 atmosferas. Um famoso exemplo de uma Fossa Abissal é a <b>Fossa das Marianas</b>, o local mais profundo dos oceanos.</p>
+					</div>
+					
+					<div id="peixes-hadal">
+						<h3>Organismos</h3>
+						<p>No mar profundo é muito fácil observar que com o aumento da profundidade vem um aumento da massa corporal dos seres-vivos, o que acontece pois uma menor razão de área por volume 
+						significa uma maior capacidade de conservação de energia com menos perdas. Este fenómeno é denominado <b>Gigantismo Abissal</b> e é muito comum nestas áreas por causa da escassez de alimento.<br>
+						As condições extremas da zona Hadal fazem dela uma área muito difícil de explorar e por isso conhecem-se poucas espécies de lá provenientes. 
+						Uma das poucas espécies conhecidas é o <span span class="hover-texto" data-image="images/snailfish.jpg">Peixe-Caracol Hadal</span>, que contem uma gosma gelatinosa debaixo da sua pele, o que o ajuda a melhor controlar a sua flutuabilidade 
+						de forma um pouco mais simplificada.<br>O organismo econtrado a maior profundidade até agora foi uma espécie de anfípode, da família das Pulgas-da-praia, mas com 5 centimetros de comprimento, mais 
+						do dobro do tamanho dos seus familiares, o <span span class="hover-texto" data-image="images/amphipod.png"><i>Hirondellea gigas</i></span>, que se alimenta de qualquer coisa que caia até ao fundo do oceano, reciclando nutrientes dos materiais mais difíceis 
+						de digerir como até madeira proveniente de barcos afundados.
+						quase </p>
+						<div class="zonas-peixes">
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/snailfish.jpg" alt="Peixe-Caracol">
+								<div class="texto-overlay">
+									<h3>Peixe-Caracol Hadal</h3>
+									<p><i>Pseudoliparis amblystomopsis</i></p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<img src="images/marianatrenchmap.png" alt="Mariana Trench">
+								<div class="texto-overlay">
+									<h3>Fossa das Marianas</h3>
+									<p>A zona mais profunda dos oceanos, onde se encontra o <i>Challenger deep</i>, o ponto conhecido como mais fundo do mar, com aproximadamente 10,920 metros de profundidade.</p>
+								</div>
+							</div>
+							<div class="zonas-mar-r">
+								<img class="hover-imagem" src="images/amphipod.png" alt="Hirondella gigas">
+								<div class="texto-overlay">
+									<h3><i>Hirondella gigas</i></h3>
+									<p>O organismo mais profundo do oceano</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<hr>
+				</div>
+			</section>
+		</section>
+	</body>
+	<footer>
+		<p>Vida marinha - 2023</p>
+	</footer>
+</html>

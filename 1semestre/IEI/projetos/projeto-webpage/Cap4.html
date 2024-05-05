@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capitulo 4</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <section class="header2">
+            <nav class="navbar">
+                <a href="index.html"><img src="images/whale_icon.png" alt="" style="width: 70px;"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Cap2.html">CLASSIFICAÇÃO DA VIDA MARINHA</a>
+							<div class="submenu">
+								<ul>
+									<li><a href="Cap2.html#peixes">Peixes</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#peixes-osseos">Peixes Ósseos</a></li>
+												<li><a href="Cap2.html#peixes-cartilaginosos">Peixes Cartilaginosos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="Cap2.html#mamiferos">Mamíferos</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#cetaceos">Cetáceos</a></li>
+												<li><a href="Cap2.html#penipedes">Penípedes</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="Cap2.html#invertebrados">Invertebrados</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#moluscos">Moluscos</a></li>
+												<li><a href="Cap2.html#crustaceos">Crustáceos</a></li>
+												<li><a href="Cap2.html#equinodermos">Equinodermos</a></li>
+											</ul>
+										</div>
+									</li>
+									<li><a href="Cap2.html#algas">Algas</a></li>
+									<li><a href="Cap2.html#relacoes">Relações Ecológicas</a><i class="fa fa-angle-right"></i>
+										<div class="subsubmenu">
+											<ul>
+												<li><a href="Cap2.html#relacoes-intra">Relações Intraespecíficas</a></li>
+												<li><a href="Cap2.html#relacoes-inter">Relações Interespecíficas</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="Cap3.html">ECOSSISTEMAS MARINHOS</a>
+							<ul class="submenu">
+								<li><a href="Cap3.html#principais-eco">Principais ecossistemas</a></li>
+								<li><a href="Cap3.html#zonas-profundas">Profundezas</a><i class="fa fa-angle-right"></i>
+									<div class="subsubmenu">
+										<ul>
+											<li><a href="Cap3.html#twilightzone">Zona <i>Twilight</i></a></li>
+											<li><a href="Cap3.html#batial">Zona Batial</a></li>
+											<li><a href="Cap3.html#abissal">Zona Abissal</a></li>
+											<li><a href="Cap3.html#hadal">Zona Hadal</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li><a href="Cap4.html">IMPACTOS AMBIENTAIS</a>
+							<ul class="submenu">
+								<li><a href="Cap4.html#problemas">Problemas ambientais</a></li>
+								<li><a href="Cap4.html#solucoes">Medidas de conservação</a></li>
+							</ul>
+						</li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            </nav>
+        </section>
+        <section class="anat-morf">
+			<div id="problemas">
+				<h1>Impactos Ambientais na Vida Marinha</h1>
+				<p> Uma das principais ameaças à vida marinha é a ação humana. Tanto ações diretas, através de atividades como a pesca excessiva e 
+				poluição das águas, como também ações indiretas que contribuem para a acidificação e aquecimento das águas prejudicam gravemente 
+				uma enorme quantidade de ecossistemas marinhos e deixam muitas espécies marinhas a sofrer, levando algumas até à sua extinção.</p>
+				<h2 class="esquerda">Poluição dos Oceanos</h2>
+				<div class="poluicao-oceanos">
+					<p>A poluição marinha é um resultado de derrames no mar de produtos químicos originarios de resíduos de atividades agrícolas, industrias ou residências.
+					Uma vez no oceano, estes produtos podem ser ingeridos por microorganismos ou pequenos animais e assim entram nas cadeias alimentares, podendo contaminar 
+					inteiros ecossistemas.
+					<br>
+					Uma outra causa de poluição marinha são os derrames de petróleo por navios em alto-mar, que podem ter efeitos devastadores para os ecossistemas marinhos.
+					O petróleo forma uma espécie de barreira à superfície do oceano que impede a penetração da luz, impedindo imensas espécies de realizar fotossíntese, o que 
+					consequentemente, afeta toda a cadeia alimentar. O petróleo também é tóxico para animais marinhos que o possam vir a ingerir, como peixes e tartarugas, e destrói 
+					o pelo de mamíferos marinhos que possam entrar em contácto com tais químicos.</p>
+					<div>
+						<img src="images/oil-spill.jpg" alt="Derrame de petroleo no oceano">
+					</div>
+				</div>
+				<h2 class="direita">Acidificação Oceânica</h2>
+				<div class="poluicao-oceanos">
+					<div>
+						<img src="images/urchin-acidification.jpeg" alt="Ouricos do mar em diferentes quantidades de CO2">
+					</div>
+					<p>As preocupantes quantidades de <i>CO2</i> libertadas para a amosfera, não só influenciam os oceanos através do aquecimento global mas também 
+					influenciam diretamente as suas água, que absorvem parte destes gases libertados, o que resulta num aumento de pH da água oceânica. Uma maior 
+					acidez das águas traduz-se na malformação de algumas espécies marinhas, principalmente esécies que dependem de carbonato de cálcio para formarem 
+					corretamente algumas das suas estruturas corporais rígidas, como corais, crustáceos e moluscos que ficam incapazes de gerar, por exemplo uma concha 
+					suficientemente forte para garantir a sua sobrevivência. Uma menor taxa de calcificação afeta todos os apetos da vida deses organismos, desde 
+					a sua reprodução até a sua capacidadede tolerar mudanças de temperatura nas águas onde habitam, colocando-os numa situação ainda 
+					mais vulnerável face às ameaças do seu habitat.</p>
+				</div>
+				<h2 class="esquerda">Impactos do Aquecimento Global</h2>
+				<div class="poluicao-oceanos">
+					<p>O aquecimento global exerce uma série de impactos na vida marinha, alterando ecossistemas e 
+					afetando negativamente várias espécies. O aumento da temperatura da água dos oceanos está relacionado 
+					com o branqueamento dos corais. Quando os corais ficam expostos a temperaturas elevadas por períodos 
+					prolongados eles expulsam algas simbíoticas que lhes proporcionam cor e nutrientes, o que enfraquece 
+					os corais, tornando-os mais suscetíveis a doenças e ameaçando espécies que dependem destes recifes.
+					O aquecimento global também influência a distribuição geográfica das espécies marinhas. À medida que 
+					as águas aquecem, algumas espécies podem migrar para águas mais frias em busca de ambientes adequados 
+					à sua sobrevivência. Espécies que já estão em risco, como tartarugas marinhas e focas, enfrentam
+					ameaças devido ao aquecimento global. Mudanças no ambiente, como o derretimento do gelo , podem 
+					comprometer os habitats essenciais para estas espécies.</p>
+					<div>
+						<img src="images/antes_e_depois.jpg" alt="corais antes e depois">
+					</div>
+				</div>
+				<h2 class="direita">Extinções</h2>
+				<div class="poluicao-oceanos">
+					<div>
+						<img src="images/extincoes.jpg" alt="estinções">
+					</div>
+					<p>Os impactos ambientais na vida marinha têm desencadeado uma onda de extinção preocupante. 
+					Diversos fatores têm contribuído para este cenário alarmante, sendo a poluição dos oceanos uma 
+					das principais ameaças. A pesca ilegal, não só afeta as espécies que são caçadas, como também
+					tráz consequências à cadeia alimentar. Golfinhos, tartarugas, baleias e outras criaturas marinhas 
+					são alvos deste comércio ilegal. Como consequência a cadeia alimentar desfaz-se, deixando um rasto 
+					de extinção. O aquecimento global e a acidificação dos oceanos desencadeiam um colapso
+					nos ecossistemas marinhos: os recifes de coral, que sustentam uma grande variedade de espécies, 
+					ficam enfraquecidos e mais suscetíveis a doenças, prejudicando também as espécies que dependem deles.
+					A poluição dos mares, proveniente do descarte inadequado de resíduos, ameaça toda a cadeia alimentar 
+					marinha. Tartarugas marinhas, baleias e peixes enfrentam diversos perigos, desde a ingestão de plásticos 
+					até à contaminação por produtos tóxicos e destruição de habitat que também é uma das principais ameaças à 
+					biodiversidade marinha, pois muitas espécies marinhas dependem de áreas específicas
+					para reprodução e desova.</p>
+				</div>
+			</div>
+			<br>
+			<div id="solucoes">
+				<h2 class="esquerda">Medidas de Conservação</h2>
+				<ol>
+					<li>
+					  <h3>Áreas Marinhas Protegidas:</h3>
+					  <p>Estabelecer áreas marinhas protegidas onde atividades humanas como a
+						pesca e a exploração de recursos são proibidas. Essas áreas forneceriam
+						um refúgio seguro para reprodução, alimentação e crescimento de espécies
+						marinhas.</p>
+					</li>
+					<li>
+					  <h3>Redução da Poluição Marinha:</h3>
+					  <p>Implementar medidas para reduzir a poluição marinha, como o controlo
+						do descarte de resíduos plásticos, produtos químicos e esgoto.</p>
+					</li>
+					<li>
+					  <h3>Restauração de Ecossistemas Marinhos:</h3>
+					  <p>Investir em projetos de restauração de ecossistemas marinhos, como por
+						exemplo a recuperação dos recifes de corais.</p>
+					</li>
+					<li>
+					  <h3>Controlo da Acidificação dos Oceanos:</h3>
+					  <p>Reduzir emissões de CO2 para controlar a acidificação dos oceanos. Isso
+						envolveria a transição para fontes de energia mais limpas e renováveis,
+						como solar, eólica e hidroelétrica.</p>
+					</li>
+				</ol>
+			</div>
+        </section>
+        <footer>
+		  <p>Vida marinha - 2023</p>
+	    </footer>
+	</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Marinha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- LeaftLet CSS e JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav id="navbar">
+            <a href="index.html"><img src="images/ua_logo_white.png" alt="" style="width: 150px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Cap2.html">CLASSIFICAÇÃO DA VIDA MARINHA</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="Cap2.html#peixes">Peixes</a><i class="fa fa-angle-right"></i>
+                                    <div class="subsubmenu">
+                                        <ul>
+                                            <li><a href="Cap2.html#peixes-osseos">Peixes Ósseos</a></li>
+                                            <li><a href="Cap2.html#peixes-cartilaginosos">Peixes Cartilaginosos</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="Cap2.html#mamiferos">Mamíferos</a><i class="fa fa-angle-right"></i>
+                                    <div class="subsubmenu">
+                                        <ul>
+                                            <li><a href="Cap2.html#cetaceos">Cetáceos</a></li>
+                                            <li><a href="Cap2.html#penipedes">Penípedes</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="Cap2.html#invertebrados">Invertebrados</a><i class="fa fa-angle-right"></i>
+                                    <div class="subsubmenu">
+                                        <ul>
+                                            <li><a href="Cap2.html#moluscos">Moluscos</a></li>
+                                            <li><a href="Cap2.html#crustaceos">Crustáceos</a></li>
+                                            <li><a href="Cap2.html#equinodermos">Equinodermos</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="Cap2.html#algas">Algas</a></li>
+                                <li><a href="Cap2.html#relacoes">Relações Ecológicas</a><i class="fa fa-angle-right"></i>
+                                    <div class="subsubmenu">
+                                        <ul>
+                                            <li><a href="Cap2.html#relacoes-intra">Relações Intraespecíficas</a></li>
+                                            <li><a href="Cap2.html#relacoes-inter">Relações Interespecíficas</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Cap3.html">ECOSSISTEMAS MARINHOS</a>
+                        <ul class="submenu">
+                            <li><a href="Cap3.html#principais-eco">Principais ecossistemas</a></li>
+                            <li><a href="Cap3.html#zonas-profundas">Profundezas</a><i class="fa fa-angle-right"></i>
+								<div class="subsubmenu">
+									<ul>
+										<li><a href="Cap3.html#twilightzone">Zona <i>Twilight</i></a></li>
+										<li><a href="Cap3.html#batial">Zona Batial</a></li>
+										<li><a href="Cap3.html#abissal">Zona Abissal</a></li>
+										<li><a href="Cap3.html#hadal">Zona Hadal</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</li>
+                    <li><a href="Cap4.html">IMPACTOS AMBIENTAIS</a>
+                        <ul class="submenu">
+							<li><a href="Cap4.html#problemas">Problemas ambientais</a></li>
+							<li><a href="Cap4.html#solucoes">Medidas de conservação</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>VIDA MARINHA</h1>
+            <p class="primeiras-palavras">Os mares apresentam uma enorme diversidade de animais e plantas, organismos e microorganismos, assim como de ecossistemas
+             e habitats onde estes seres-vivos habitam, o que faz os oceanos empenharem um papel crucial no que toca a manter o equilibrio da natureza do nosso planeta.</p><br>
+            <br>
+            <p>Universidade de Aveiro<br>Carolina Sousa Teixeira, João Diogo da Silva Correia Teixeira Martins</p>
+            <a href="about.html" class="hero-btn">Sobre nós</a>
+        </div>
+    </section>
+	
+    <!-- ANATOMIA E MORFOLOGIA -->
+
+    <section class="anat-morf">
+		
+		<div class="intros-caps">
+			<h1>No mar econtram-se inúmeras espécies aquáticas e é apenas normal que existam também inúmeras variações na sua biologia e classificação.</h1>
+        </div>
+        <p> Os oceanos e mares abrigam uma vasta quantidade de formas de vida. Para entender melhor essa incrível diversidade, exploramos a 
+        "Classificação da Vida Marinha". Este tópico organiza as diferentes espécies aquáticas em categorias como peixes, mamíferos, invertebrados e
+        algas, proporcionando uma visão mais clara de suas relações ecológicas. Essa abordagem permite-nos explorar as interconexões entre essas 
+        diferentes formas de vida, revelando a complexidade e a variedade que caracterizam o reino marinho.</p>
+        <h3>Para saber mais sobre a classificação da vida marinha:</h3>
+        <div class="container">
+            <div class="img">
+                <img src="images/sabermais1.jpg" alt="Imagem Capitulo 2">
+            </div>
+            <p>CLASSIFICAÇÃO DA VIDA MARINHA</p>
+            <a href="Cap2.html"><span= class="btn-capitulos">SABER MAIS</span></a>
+        </div>
+        <hr>
+		<div class="intros-caps">
+			<h1>Um ecossistema marinho apresenta características especiais, diferentes de qualquer outro ecossistema.</h1>
+		</div>
+		<p>Em todo o oceano são encontrados diferentes níveis de oxigénio, temperatura, luz solar e salinidade, levando a que existam uma grande variação
+		 não só no aspeto do ecossistema mas também no tipo de vida que este sustenta. Tendo em conta a variação da profundeza das águas a diversidade da vida
+		  e do ambiente de cada ecossistema aumenta drásticamente dando lugar a espécies misteriosas e surpreendentes.</p>
+		<h3>Para saber mais sobre a diversidade dos ecossistemas marinhos:</h3>
+        <div class="container">
+            <div class="img">
+                <img src="images/sabermais2.jpg" alt="Imagem Capitulo 3">
+            </div>
+            <p>ECOSSISTEMAS MARINHOS</p>
+            <a href="Cap3.html"><span= class="btn-capitulos">SABER MAIS</span></a>
+        </div>
+        <hr>
+        <div class="intros-caps">
+			<h1>Uma das principais ameaças à vida marinha é a ação humana.</h1>
+		</div>
+		<p>Ações como a pesca excessiva e a poluição direta das águas são muito conhecidas como causas para o declínio dos mares mas existem muitas mais causas e 
+		consequencias que podem vir a ser devastadores para a saúde dos nosso oceanos. </p>
+		<h3>Para saber mais sobre possíveis soluções para estes problemas:</h3>
+        <div class="container">
+            <div class="img">
+                <img src="images/sabermais3.jpg" alt="Imagem Capitulo 4">
+            </div>
+            <p>IMPACTOS AMBIENTAIS</p>
+            <a href="Cap4.html"><span= class="btn-capitulos">SABER MAIS</span></a>
+        </div>
+        
+    </section>
+    <script src="js/script.js"></script>
+    <footer>
+		<p>Vida marinha - 2023</p>
+    </footer>
+</body>
+</html>

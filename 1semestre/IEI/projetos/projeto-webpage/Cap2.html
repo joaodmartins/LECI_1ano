@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capitulo 2</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- LeaftLet CSS e JavaScript -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    </head>
+    <body>
+        <section class="header2">
+            <nav style="height:25px;" class="navbar">
+                <a href="index.html"><img src="images/whale_icon.png" alt="" style="width: 70px;"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="Cap2.html">CLASSIFICAÇÃO DA VIDA MARINHA</a>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a href="Cap2.html#peixes">Peixes</a><i class="fa fa-angle-right"></i>
+                                        <div class="subsubmenu">
+                                            <ul>
+                                                <li><a href="Cap2.html#peixes-osseos">Peixes Ósseos</a></li>
+                                                <li><a href="Cap2.html#peixes-cartilaginosos">Peixes Cartilaginosos</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="Cap2.html#mamiferos">Mamíferos</a><i class="fa fa-angle-right"></i>
+                                        <div class="subsubmenu">
+                                            <ul>
+                                                <li><a href="Cap2.html#cetaceos">Cetáceos</a></li>
+                                                <li><a href="Cap2.html#penipedes">Penípedes</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="Cap2.html#invertebrados">Invertebrados</a><i class="fa fa-angle-right"></i>
+                                        <div class="subsubmenu">
+                                            <ul>
+                                                <li><a href="Cap2.html#moluscos">Moluscos</a></li>
+                                                <li><a href="Cap2.html#crustaceos">Crustáceos</a></li>
+                                                <li><a href="Cap2.html#equinodermos">Equinodermos</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="Cap2.html#algas">Algas</a></li>
+                                    <li><a href="Cap2.html#relacoes">Relações Ecológicas</a><i class="fa fa-angle-right"></i>
+                                        <div class="subsubmenu">
+                                            <ul>
+                                                <li><a href="Cap2.html#relacoes-intra">Relações Intraespecíficas</a></li>
+                                                <li><a href="Cap2.html#relacoes-inter">Relações Interespecíficas</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Cap3.html">ECOSSISTEMAS MARINHOS</a>
+                            <ul class="submenu">
+                                <li><a href="Cap3.html#principais-eco">Principais ecossistemas</a></li>
+                                <li><a href="Cap3.html#zonas-profundas">Profundezas</a><i class="fa fa-angle-right"></i>
+                                    <div class="subsubmenu">
+                                        <ul>
+                                            <li><a href="Cap3.html#twilightzone">Zona <i>Twilight</i></a></li>
+                                            <li><a href="Cap3.html#batial">Zona Batial</a></li>
+                                            <li><a href="Cap3.html#abissal">Zona Abissal</a></li>
+                                            <li><a href="Cap3.html#hadal">Zona Hadal</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="Cap4.html">IMPACTOS AMBIENTAIS</a>
+                            <ul class="submenu">
+                                <li><a href="Cap4.html#problemas">Problemas ambientais</a></li>
+                                <li><a href="Cap4.html#solucoes">Medidas de conservação</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            </nav>
+        </section>
+        <section class="introducao">
+            <h1>Classificação da Vida Marinha</h1>
+            <p>Neste capítulo, vamos nos aprofundar na incrível diversidade da vida marinha, explorando diferentes categorias que ajudam 
+            a entender melhor este vasto ecossistema. Começamos com os peixes, uma classe variada que inclui desde os coloridos peixinhos 
+            tropicais até os grandes predadores marinhos. Em seguida, exploramos os mamíferos marinhos, como baleias e golfinhos, que 
+            compartilham connosco a necessidade de respirar ar, mas vivem predominantemente nas águas salgadas.
+            Partindo para os invertebrados marinhos, encontramos uma variedade surpreendente de formas de vida, desde os ouriços-do-mar 
+            até as fascinantes estrelas-do-mar. Também iremos explorar as algas, protagonistas fundamentais, pois desempenham um papel vital na produção 
+            de oxigênio e na base da cadeia alimentar marinha.
+            Além disso, vamos investigar as complexas relações ecológicas que ligam essas diferentes criaturas. </p>
+        </section>
+        <section class="peixes" id="peixes">
+            <div class="topic-container">
+                <img src="images/peixes.jpg" alt="Peixes">
+                <div class="text-box">
+                    <h2>Peixes</h2>
+                    <p>Os peixes, como grupo de vertebrados marinhos, podem ser classificados em duas categorias: Peixes Ósseos (Osteichtyes) 
+                    e Peixes Cartilaginosos (Chondrichthyes).<br> Neste contexto, exploraremos as diferenças entre estes dois grupos de peixes, 
+                    destacando as suas características únicas e contribuições para o ambiente marinho.</p>
+                </div>
+            </div>
+            
+            <section class="peixes-osseos" id="peixes-osseos">
+                <h2>Peixes Ósseos (<i>Osteichtyes</i>)</h2>
+                <section class="anat-morf">
+                    <h3>Anatomia e Morfologia</h3>
+                    <p>Os peixes ósseos, pertencentes à classe Osteichtyes, exibem uma variedade impressionante de características anatómicas 
+                    e morfológicas que são essenciais para a sua adaptação ao ambiente aquático. Estas características contribuem
+                    para a efciência na natação, captura de alimentos, respiração e equilíbrio hidrodinâmico</p>
+            
+                    <div class="row">
+                        <div class="anat-morf-col">
+                            <h3>Esqueleto ósseo</h3>
+                            <p>O esqueleto dos peixes ósseos é predominantemente composto por tecidos ósseos, 
+                            que lhes confere uma estrutura robusta e flexível. A coluna vertebral confere suporte 
+                            e flexibilidade para movimentos ágeis, enquanto o crânio protege os órgãos vitais, como 
+                            o cérebro e os órgãos sensoriais. Costelas e espinhos ósseos reforçam a estrutura do corpo,
+                            contribuindo para a proteção dos órgãos internos.</p>
+                        </div>
+                        <div class="anat-morf-col">
+                            <h3>Barbatanas</h3>
+                            <p>As barbatanas dos peixes ósseos desempenham um papel crucial na sua locomoção e estabilidade na água. A barbatana dorsal,
+                            situada no dorso, auxilia na estabilidade lateral, enquanto as nadadeiras peitorais e pélvicas, posicionadas nos lados do corpo, 
+                            são fundamentais para a direção e equilíbrio durante a natação. A barbatana anal, localizada na parte inferior do corpo, 
+                            trabalha em conjunto com a barbatana dorsal para controlar a posição vertical do peixe.</p>
+                        </div>
+                        <div class="anat-morf-col">
+                            <h3>Escamas</h3>
+                            <p>A presença de escamas oferece proteção contra predadores e minimiza a resistência ao deslocamento na água. Existem dois tipos 
+                            principais de escamas em peixes ósseos: as ciclóides, redondas e lisas, e asctenóides, com bordas dentadas e uma textura áspera.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="class-tax">
+                    <h3>Classificação Taxonómica</h3>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Salmonidae</i></h4>
+                        <p>A família <i>Salmonidae</i> é composta por peixes notáveis, como o salmão e a truta, que habitam 
+                        águas doce e salgada no Hemisfério Norte. Estes peixes são conhecidos pelas suas migrações complexas, indo dos rios para os 
+                        oceanos e retornando para a reprodução. A sua coloração vibrante, especialmente durante a época de acasalamento, é uma 
+                        característica distintiva. Além de sua importância ecológica, os peixes da familía <i>Salmonidae</i>e têm valor econômico significativo devido 
+                        à pesca comercial e esportiva, além da aquicultura. No entanto, enfrentam desafios devido à degradação do habitat e mudanças 
+                        climáticas, destacando a necessidade de conservação e gestão sustentável.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/salmao.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Salmão</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col" style="text-align: center">
+                                <div id="mapSalmonidae"></div>
+                                <script src="js/mapSalmonidae.js"></script>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/truta.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Truta</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Pomacentridae</i></h4>
+                        <p>A família <i>Pomacentridae</i>, é conhecida por sua diversidade de cores e comportamentos encantadores. 
+                        Estes peixes marinhos, como o Peixe-palhaço e a Donzela habitam recifes de coral tropicais, destacando-se pelos seus corpos 
+                        comprimidos, barbatanas ornamentadas e relações simbióticas com anémonas-do-mar. 
+                        A resistência destes peixes à toxina anémona permite uma convivência próxima, 
+                        fornecendo abrigo e alimento mútuo. Os peixes-palhaço estabelecem hierarquias sociais, com casais dominantes e ajudantes na 
+                        criação dos filhotes. Esta família desempenha um papel vital na biodiversidade dos recifes de coral, contribuindo para a 
+                        fascinação e compreensão dos ecossistemas marinhos.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/peixepalhaco.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Peixe-palhaço</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col" style="text-align: center">
+                                <div id="mapPomacentridae"></div>
+                                <script src="js/mapPomacentridae.js"></script>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/donzelaperola.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Donzela</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Salmonidae">
+                        <h4>Família Cyprinidae</h4>
+                        <p>A família Cyprinidae é uma extensa e diversificada família de peixes de água doce, incluindo carpas e barbos. 
+                        Distribuídos globalmente, estes peixes apresentam corpos fusiformes, barbatanas curtas e escalas variadas. 
+                        Adaptáveis a diferentes ambientes aquáticos, os Cyprinidae desempenham papéis ecológicos vitais e têm importância econômica, 
+                        sendo cultivados para consumo humano e como peixes ornamentais. Enfrentam desafios de conservação devido à degradação do habitat, 
+                        poluição e introdução de espécies invasoras. A sua preservação é essencial para a biodiversidade aquática e a sustentabilidade 
+                        dos ecossistemas de água doce.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/carpa.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Carpa</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col" style="text-align: center">
+                                <div id="graphCyprinidae"></div>
+                                <script src="js/mapCyprinidae.js"></script>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/barbo.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Barbo</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Gadidae</i></h4>
+                        <p>A família <i>Gadidae</i>, é composta por peixes marinhos com corpos alongados, barbatanas dorsais 
+                        longas e mandíbulas inferiores proeminentes, como o bacalhau e o elgefim. Estes peixes desempenham um papel fundamental nas águas frias e temperadas, 
+                        sendo predadores eficazes que controlam populações de presas como peixes, crustáceos e moluscos. A pesca de gadídeos é vital para economias costeiras, mas a exploração excessiva levanta 
+                        preocupações sobre a sustentabilidade. A gestão cuidadosa é essencial para preservar estas espécies e manter o equilíbrio nos 
+                        ecossistemas marinhos.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/bacalhau.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Bacalhau</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col" style="text-align: center">
+                                <div id="mapGadidae"></div>
+                                <script src="js/mapGadidae.js"></script>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/elgefim.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Elgefim</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Syngnathidae</i></h4>
+                        <p>A família <i>Syngnathidae</i>, composta por cavalos-marinhos e dragões-do-mar, destaca-se pela morfologia única e comportamentos 
+                        reprodutivos distintivos. Caracterizados por corpos alongados e cabeças tubulares, estes peixes exibem gestação masculina, 
+                        onde os machos carregam e dão à luz os ovos. A habilidade de mudança de cor e comportamentos complexos de acasalamento 
+                        adicionam à sua singularidade. No entanto, a vulnerabilidade a ameaças ambientais, como pesca indiscriminada e destruição de 
+                        habitats, destaca a importância da conservação para proteger essas criaturas notáveis e essenciais para os ecossistemas marinhos.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/cavalomarinho.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Cavalo-marinho</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col" style="text-align: center">
+                                <div id="graphSyngnathidae"></div>
+                                <script src="js/mapSyngnathidae.js"></script>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/dragaomarinho.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Dragão-marinho</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="peixes-cartilaginosos" id="peixes-cartilaginosos">
+                <h2>Peixes Cartilaginosos (Chondrichthyes)</h2>
+                <section class="anat-morf">
+                    <h3>Anatomia e Morfologia</h3>
+                    <p>Os peixes cartilaginosos, pertencentes à classe <i>Chondrichthyes</i>, apresentam características anatómicas e morfológicas distintas que contribuem para a sua
+                    adaptação ao ambiente aquático. Essas características incluem:</p>
+            
+                    <div class="row">
+                        <div class="anat-morf-col">
+                            <h3>Esqueleto cartilaginoso</h3>
+                            <p>Ao contrário dos peixes ósseos, os peixes cartilaginosos possuem um esqueleto composto principalmente por cartilagem, tornando-os mais leves
+                            e ágeis na água. Isso também contribui para a sua flutuabilidade neutra, ou seja, os peixes cartilaginosos podem manter uma posição na coluna de água 
+                            sem afundar ou flutuar involuntariamente.</p>
+                        </div>
+                        <div class="anat-morf-col">
+                            <h3>Barbatanas especiais</h3>
+                            <p>As barbatanas dos peixes cartilaginosos desempenham papéis específicos. A barbatana dorsal é geralmente bem desenvolvida, que serve para estabilidade lateral. 
+                            Algumas espécies, como os tubarões-martelo, possuem barbatanas peitorais largas que facilitam manobras rápidas e precisas.</p>
+                        </div>
+                        <div class="anat-morf-col">
+                            <h3>Pele sem escamas</h3>
+                            <p>Ao contrário dos peixes ósseos, os peixes cartilaginosos não possuem escamas. A pele é coberta por pequenas placas dérmicas chamadas dentículos dérmicos,
+                            que têm uma textura áspera, proporcionando resistência e eficiência hidrodinâmica.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="class-tax">
+                    <h3>Classificação Taxonómica</h3>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Torpedinidae</i></h4>
+                        <p>A família <i>Torpedinidae</i> inclui raias elétricas notáveis, reconhecidas pelas suas habilidades elétricas distintivas. 
+                        Possuindo placas elétricas com eletroblastos especializados, estas raias usam descargas elétricas para caça, 
+                        comunicação e defesa. Adaptadas para uma vida no leito oceânico, apresentam corpos achatados e uma coloração camuflada. 
+                        Habitam águas costeiras e profundas, sendo predadoras de peixes e crustáceos. A reprodução é geralmente ovovivípara. 
+                        Embora desempenhem papéis específicos nos ecossistemas, enfrentam ameaças devido à pesca e degradação do habitat, 
+                        destacando a importância da pesquisa e conservação para sua sobrevivência.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/torpedotorpedo.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Tremelga</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/torpedinidae.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Caracteristicas da familia torpedinidae</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/torpedosinuspersici.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Torpedo sinuspersici</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Myliobatidae</i></h4>
+                        <p>A família <i>Myliobatidae</i> inclui especies como a manta e a raia focinho de vaca, com corpos achatados e envergaduras impressionantes 
+                        que podem atingir até sete metros. Estas raias possuem uma aparência majestosa, com barbatanas peitorais distintas e 
+                        padrões únicos. Adaptadas para deslizar suavemente pela água, alimentam-se de plâncton, pequenos peixes e crustáceos, 
+                        filtrando a água através das suas guelras. Muitas espécies são vivíparas, dando à luz filhotes já desenvolvidos. 
+                        Infelizmente, enfrentam ameaças devido à pesca desregulada e degradação do habitat, destacando a necessidade de esforços 
+                        de conservação para proteger essas criaturas marinhas e preservar a saúde dos ecossistemas oceânicos.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/manta.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Manta</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col" style="text-align: center">
+                                <div id="graphMyliobatidae"></div>
+                                <script src="js/mapMyliobatidae.js"></script>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/raia-focinho-de-vaca.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Raia-focinho-de-vaca</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Salmonidae">
+                        <h4>Família <i>Lamnidae</i></h4>
+                        <p>A família <i>Lamnidae</i> abrange tubarões, como o tubarão-branco e o tubarão-mako. Caracterizados por uma anatomia 
+                        adaptada para a caça eficiente, incluindo dentes serrilhados e corpos hidrodinâmicos, estes predadores são reconhecidos 
+                        pela sua posição no topo da cadeia alimentar e habilidades predatórias. Apesar da sua imagem temida, os tubarões da família Lamnidae enfrentam desafios devido 
+                        à pesca predatória e perda de habitats.</p>
+                
+                        <div class="row">
+                            <div class="Salmonidae-col">
+                                <img src="images/tubaraobranco.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Tubarão-branco</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/lamnidae.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Dentes da familia lamnidae</h3>
+                                </div>
+                            </div>
+                            <div class="Salmonidae-col">
+                                <img src="images/tubaraomako.jpg" alt="">
+                                <div class="layer">
+                                    <h3>Tubarão-mako</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="mamiferos" id="mamiferos">
+            <div class="topic-container">
+                <img src="images/mamiferos.jpg" alt="Mamíferos">
+                <div class="text-box">
+                    <h2>Mamíferos</h2>
+                </div>
+            </div>
+            <section class="cetaceos" id="cetaceos">
+                <h2>Cetáceos</h2>
+                <p>Cetáceos, como baleias, golfinhos e botos, são mamíferos marinhos adaptados à vida aquática. Com formas hidrodinâmicas e 
+                habilidades vocais complexas, estes animais impressionam pela diversidade de tamanhos e comportamentos. A sua comunicação sonora, 
+                dieta variada e movimentos graciosos caracterizam a sua existência nos oceanos. No entanto, enfrentam ameaças crescentes, como colisões 
+                com embarcações e poluição.</p>
+                <section class="Salmonidae">
+                    <h3>Baleias</h3>
+                    <p>As baleias, destacam-se pela sua imponência, inteligência e comportamento social complexo. 
+                    Adaptadas à vida oceânica, possuem corpos hidrodinâmicos e sistemas respiratórios especializados. Desde da baleia-azul, que
+                    é considerada o maior animal do planeta, até a algumas mais pequenas como a
+                    baleia-cinzenta. Algumas como a baleia-jubarte são conhecidas
+                    pelos seus saltos espetaculares. Comunicam-se por meio de 
+                    vocalizações complexas e realizam notáveis migrações entre áreas de alimentação e reprodução. Sujeitas a ameaças históricas 
+                    como a caça, esforços de conservação agora visam proteger esses gigantes dos mares. Além de desempenharem um papel crucial nos 
+                    ecossistemas, a observação responsável de baleias tornou-se uma forma sustentável de apreciar estes mamíferos incríveis nos seus 
+                    habitats naturais.</p>
+            
+                    <div class="row">
+                        <div class="Salmonidae-col">
+                            <img src="images/baleiaazul.jpg" alt="">
+                            <div class="layer">
+                                <h3>Baleia Azul</h3>
+                            </div>
+                        </div>
+                        <div class="Salmonidae-col">
+                            <img src="images/baleiacinzenta.jpg" alt="">
+                            <div class="layer">
+                                <h3>Baleia Cinzenta</h3>
+                            </div>
+                        </div>
+                        <div class="Salmonidae-col">
+                            <img src="images/jubarte.jpg" alt="">
+                            <div class="layer">
+                                <h3>Baleia Jubarte</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="Salmonidae">
+                    <h3>Golfinhos e Botos</h3>
+                    <p>Golfinhos e botos, pertencentes à ordem dos cetáceos, são animais marinhos conhecidos pela sua inteligência, 
+                    sociabilidade e habilidades acrobáticas. Golfinhos, destacam-se pela complexidade 
+                    da sua comunicação e comportamento em grupos sociais. Botos, uma categoria de golfinhos de água doce são adaptados a rios e lagos, 
+                    com uma presença marcante na bacia amazônica. Ambos compartilham características 
+                    físicas, como barabatanas dorsais e caudais, enquanto enfrentam ameaças ambientais, incluindo poluição e perda de habitat.</p>
+            
+                    <div class="row">
+                        <div class="Salmonidae-col">
+                            <img src="images/golfinhocomum.jpg" alt="">
+                            <div class="layer">
+                                <h3>Golfinho</h3>
+                            </div>
+                        </div>
+                        <div class="Salmonidae-col">
+                            <img src="images/boto.jpg" alt="">
+                            <div class="layer">
+                                <h3>Boto</h3>
+                            </div>
+                        </div>
+                        <div class="Salmonidae-col">
+                            <div class="image-container">
+                                <img src="images/orca.jpg" alt="">
+                            </div>
+                            <div class="layer">
+                                <h3>Orca</h3>
+                            </div>
+                        </div>             
+                    </div>
+                </section>
+            </section>
+            <section class="penipedes" id="penipedes">
+                <h2>Penípedes</h2>
+                <p>Os Penípedes, incluindo focas, leões-marinhos e morsas têm adaptações únicas para transitar entre ambientes aquáticos e terrestres. 
+                Focas têm corpos hidrodinâmicos e nadadeiras, enquanto leões-marinhos são conhecidos por suas orelhas externas proeminentes e agilidade em terra e água. Morsas têm presas, 
+                pele espessa e camada de gordura para isolamento térmico. Todos são mergulhadores habilidosos, desempenhando papéis cruciais nos 
+                ecossistemas costeiros e exemplificando a extraordinária adaptação da vida marinha.</p>
+                
+                <div class="row">
+                    <div class="penipedes-col">
+                        <img src="images/foca.jpg" alt="">
+                        <h3>Focas</h3>
+                        <p>As focas distinguem-se pelos seus corpos alongados e focinhos curtos, nadam usando as barbatanas traseiras enquanto 
+                        em terra movimentam-se com as barbatanas dianteiras.</p>
+                    </div>
+                    <div class="penipedes-col">
+                        <img src="images/leaomarinho.jpg" alt="">
+                        <h3>Leões-Marinhos</h3>
+                        <p>Os leões-marinhos compartilham características com as focas, mas destacam-se pelos seus corpos robustos e orelhas externas.</p>
+                    </div>
+                    <div class="penipedes-col">
+                        <img src="images/morsa.jpg" alt="">
+                        <h3>Morsas</h3>
+                        <p>As morsas são conhecidas pelas suas longas e curvas presas, utilizadas para cavar no leito do mar em busca de alimento.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="invertebrados" id="invertebrados">
+            <div class="topic-container">
+                <img src="images/invertebrados.jpg" alt="Invertebrados">
+                <div class="text-box">
+                    <h2>Invertebrados</h2>
+                </div>
+            </div>
+            <section class="moluscos">
+                <section class="cefalopodes" id="moluscos">
+                    <div id="conteudo-geral">
+                        <h2>Moluscos</h2>
+                        <p>Os moluscos, uma classe diversificada de invertebrados, formam um grupo vasto e intrigante que abrange 
+                        uma ampla variedade de habitats, desde os oceanos profundos até os cantos dos ambientes terrestres. 
+                        Com uma notável adaptabilidade, os moluscos apresentam três classes principais que destacam diferentes modos de vida: 
+                        cefalópodes, bivalves e gastropodes. A característica distintiva dos moluscos é sua morfologia variada, que pode incluir 
+                        conchas espiralizadas, valvulas articuladas ou corpos nus. Essa diversidade é evidente nos cefalópodes, como polvos e lulas, 
+                        com seus corpos flexíveis, tentáculos ágeis e olhos sofisticados. Em contraste, os bivalves, como ostras e mexilhões, 
+                        exibem conchas articuladas que protegem seus corpos enquanto realizam a filtragem de partículas alimentares da água. 
+                        Os gastropodes, representados por caracóis e lesmas, possuem conchas espiralizadas ou abandonam completamente essa 
+                        estrutura para uma vida nua e desprotegida. Os moluscos, através de suas diversas classes, proporcionam uma visão cativante 
+                        da riqueza da vida animal. Dos estrategistas do oceano aos pacíficos filtradores e exploradores terrestres, esses invertebrados 
+                        demonstram uma incrível adaptabilidade. Além da sua diversidade morfológica, os moluscos exibem uma ampla gama de 
+                        estratégias de sobrevivência e interações ecológicas. Os cefalópodes, por exemplo, destacam-se como predadores ágeis 
+                        e inteligentes, capazes de resolver problemas complexos e até mesmo demonstrar comportamentos lúdicos. Os bivalves, 
+                        em contrapartida, desempenham papéis cruciais na purificação da água, filtrando partículas e contribuindo para a manutenção 
+                        da qualidade dos ecossistemas aquáticos.</p>
+                    </div>
+                    <div id="imagens">
+                        <div class="imagem">
+                            <img src="images/cefalopodes.jpg" alt="">
+                            <div class="texto-imagem">
+                                <h3>Cefalópodes</h3>
+                                <p>Os cefalópodes, como polvos e lulas, são criaturas dotadas de inteligência notável 
+                                e corpos altamente adaptáveis</p>
+                                <button onclick="togglePopup('popup1')">Saber Mais</button>
+                            </div>
+                        </div>
+                
+                        <div class="imagem">
+                            <img src="images/bivalves.jpg" alt="">
+                            <div class="texto-imagem">
+                                <h3>Bivalves</h3>
+                                <p>Os bivalves, destacam-se pela sua estrutura de conchas duplas 
+                                e pela habilidade única de filtrar nutrientes da água</p>
+                                <button onclick="togglePopup('popup2')">Saber Mais</button>
+                            </div>
+                        </div>
+                
+                        <div class="imagem">
+                            <img src="images/gastropodes.jpg" alt="">
+                            <div class="texto-imagem">
+                                <h3>Gastrópodes</h3>
+                                <p>Gastrópodes, são criaturas que se destacam pela sua concha espiralizada e habilidade única 
+                                de locomoção através de uma característica 'barriga rastejante'</p>
+                                <button onclick="togglePopup('popup3')">Saber Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overlay" onclick="closePopup()"></div>
+
+                    <div id="popup1" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Cefalópodes</h3>
+                            <p>Os cefalópodes, habitantes das profundezas marinhas, são verdadeiros mestres da inteligência. 
+                            Polvos, lulas e nautilus destacam-se por seus cérebros altamente desenvolvidos e habilidades cognitivas notáveis. 
+                            As suas cabeças distintas abrigam cérebros complexos, enquanto os seus tentáculos ágeis e olhos avançados garantem uma 
+                            caça eficiente. São predadores sofisticados, demonstrando comportamentos que desafiam a compreensão tradicional de 
+                            invertebrados.</p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/polvo.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Polvo</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/lula.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Lula</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/choco.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Choco</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+
+                    <div id="popup2" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Bivalves</h3>
+                            <p>Em contraste, os bivalves adotam uma abordagem mais simples, mas igualmente eficaz. Ostras, mexilhões e amêijoas, 
+                            com as suas conchas articuladas, prosperam como filtradores, retirando partículas de alimento da água. A sua existência 
+                            sedentária contribui para a estabilidade dos ecossistemas aquáticos, enquanto a simetria das suas conchas fornece uma 
+                            proteção eficaz contra predadores.<p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/mexilhao.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Mexilhão</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/ostra.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Ostra</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/vieira.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Vieira</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+
+                    <div id="popup3" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Gastrópodes</h3>
+                            <p>Estão incluídos nesta classe os caracóis marinhos, os búzios, as lapas e as lesmas do mar. 
+                            Muitas das conchas destes univalves, apresentam uma forma espiral e são encontrados em vários habitats marinhos, 
+                            desde recifes de coral até praias arenosas e até mesmos nas rochas da orla marítima.</p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/lapas.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Lapas</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/lesma.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Lesma-do-mar</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/caracol.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Caracol-do-mar</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+                </section>
+                <section class="cefalopodes" id="crustaceos">
+                    <div id="imagens">
+                        <div class="imagem">
+                            <div class="texto-imagem">
+                                <h3>Caranguejos</h3>
+                                <p>Os caranguejos, com as suas carapaças robustas e garras habilidosas, 
+                                são exemplos de adaptabilidade na vida marinha</p>
+                                <button onclick="togglePopup('popup4')">Saber Mais</button>
+                            </div>
+                            <img src="images/caranguejo.jpg" alt="">
+                        </div>
+                
+                        <div class="imagem">
+                            <div class="texto-imagem">
+                                <h3>Lagostas</h3>
+                                <p>As lagostas, impressionam com suas carapaças robustas, garras imponentes e uma beleza singular </p>
+                                <button onclick="togglePopup('popup5')">Saber Mais</button>
+                            </div>
+                            <img src="images/lagosta.jpg" alt="">
+                        </div>
+                
+                        <div class="imagem">
+                            <div class="texto-imagem">
+                                <h3>Camarões</h3>
+                                <p>Os camarões, possuem as suas carapaças translúcidas e patas delicadamente articuladas.</p>
+                                <button onclick="togglePopup('popup6')">Saber Mais</button>
+                            </div>
+                            <img src="images/camarao.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="conteudo-geral">
+                        <h2>Crústaceos</h2>
+                        <p>Os crustáceos formam um grupo fascinante e diversificado de artrópodes que povoam os ambientes aquáticos ao 
+                        redor do mundo. Estes animais marinhos exibem uma variedade impressionante de formas, tamanhos e comportamentos, 
+                        adaptando-se a uma ampla gama de ecossistemas, desde águas rasas até as profundezas abissais.
+                        Com os seus exoesqueletos calcários distintivos, os crustáceos são caracterizados por uma carapaça rígida que protege os seus 
+                        corpos segmentados. Essa estrutura externa não apenas confere resistência física, mas também desempenha um papel vital na 
+                        regulação da água e na proteção contra predadores.
+                        Os membros da classe dos crustáceos incluem uma variedade de organismos notáveis, como caranguejos, lagostas, camarões.
+                        Cada um desses grupos exibe características únicas e adaptações especializadas para sobreviver nos seus 
+                        habitats específicos.
+                        A locomover-se através de movimentos rítmicos de apêndices articulados, os crustáceos revelam uma destreza surpreendente. 
+                        As suas pinças, presentes em muitas espécies, são frequentemente utilizadas para caçar presas, manipular alimentos ou se 
+                        defender contra potenciais ameaças. A complexidade de suas interações sociais e estratégias de reprodução também adiciona uma 
+                        camada intrigante ao estudo desses animais. 
+                        No entanto, apesar de sua diversidade e importância ecológica, os crustáceos enfrentam desafios significativos, como a 
+                        degradação do habitat, a poluição e as mudanças climáticas, que ameaçam a saúde de suas populações e a estabilidade dos 
+                        ecossistemas marinhos. Portanto, a compreensão e preservação desses fascinantes artrópodes tornam-se fundamentais para a 
+                        manutenção do equilíbrio dos oceanos e a biodiversidade global.</p>
+                    </div>
+
+
+                    <div id="overlay" onclick="closePopup()"></div>
+
+                    <div id="popup4" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Caranguejos</h3>
+                            <p>Os caranguejos são crustáceos marinhos com carapaças coloridas e garras poderosas. A sua carapaça robusta e garras 
+                            assimétricas são adaptações notáveis para a defesa, captura de presas e manipulação de alimentos. Esses animais ágeis 
+                            e musculosos têm patas especializadas para nadar e cavar. Além da sua beleza única, desempenham um papel vital nos 
+                            ecossistemas marinhos, ajudando a regular populações e contribuindo para a saúde dos ambientes costeiros.
+                            </p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/caranguejo-violinista.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Caranguejo Violinista<br>(Uca spp.)</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/caranguejo-aranha.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Caranguejo-aranha Japonês<br>(Macrocheira kaempferi)</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/caranguejo-azul.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Caranguejo Azul<br>(Callinectes sapidus)</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+
+                    <div id="popup5" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Lagostas</h3>
+                            <p>As lagostas, graciosas habitantes dos oceanos, impressionam com suas carapaças coloridas e pinças poderosas. 
+                            Adaptadas à vida marinha, estes crustáceos exibem uma beleza funcional, com a carapaça resistente servindo como armadura. 
+                            As suas pinças, especializadas para capturar presas e competição entre machos, são características distintivas. A locomoção 
+                            ágil das lagostas, impulsionada por músculos abdominais, as torna ágeis exploradoras dos recifes. Além do seu valor 
+                            culinário, as lagostas desempenham papéis essenciais nos ecossistemas marinhos, contribuindo para o equilíbrio populacional.<p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/lagosta-americana.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Lagosta Americana<br>(Homarus americanus)</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/lagosta-espinhuda.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Lagosta Espinhuda<br>(Panulirus interruptus)</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/lagosta-caraibas.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Lagosta das Caraíbas<br>(Panulirus argus)</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+
+                    <div id="popup6" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Camarões</h3>
+                            <p>Os camarões, crustáceos aquáticos, destacam-se pelas suas carapaças translúcidas e cores variadas. 
+                            Seus olhos multifacetados e patas longas contribuem para uma aparência graciosa. Equipados com pinças assimétricas, 
+                            utilizam-nas para alimentação e defesa. A locomoção ágil e habilidade de escavação são características notáveis, 
+                            enquanto a sua importância ecológica se reflete no seu papel na limpeza de detritos e na cadeia alimentar marinha. 
+                            Os camarões representam seres aquáticos essenciais, com uma beleza discreta que enriquece os ecossistemas marinhos.
+                            </p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/camarao-agua-doce.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Camarão de Água Doce<br>(Neocaridina davidi)</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/camarao-patas-brancas.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Camarão-de-patas-brancas<br>(Lysmata amboinensis)</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/camarao-rosa.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Camarão rosa<br>(Penaeus duorarum)</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+                </section>
+                <section class="cefalopodes" id="equinodermos">
+                    <div id="conteudo-geral">
+                        <h2>Equinodermos<h2>
+                        <p>Os equinodermos constituem um fascinante filo de animais marinhos que, embora apresentem uma notável diversidade, 
+                        compartilham características distintivas que os tornam únicos no reino animal. Estes seres, predominantemente marinhos, 
+                        exibem uma incrível variedade de formas, tamanhos e adaptações, sendo encontrados em diversos ambientes aquáticos ao redor 
+                        do mundo.
+                        Uma das características mais marcantes dos equinodermos é o seu sistema ambulacrário, que inclui um sistema hidrovascular 
+                        responsável pela locomoção, captura de alimentos e trocas gasosas. Este sistema utiliza canais e tubos cheios de água, 
+                        permitindo movimentos coordenados e a ativação de apêndices especiais, como os tentáculos.
+                        A simetria radial, muitas vezes exibida por esses animais, é outra característica distintiva. No entanto, essa simetria pode 
+                        ser modificada em algumas espécies, conferindo-lhes uma aparência mais assimétrica. Os seus corpos podem assumir formas variadas, 
+                        desde estrelas com braços, ouriços esféricos a pepinos alongados, cada uma adaptada ao seu estilo de vida específico.
+                        Os equinodermos desempenham papéis essenciais nos ecossistemas marinhos. Além de sua presença vital para a saúde dos recifes 
+                        de coral, eles são fundamentais para a regulação populacional de outros organismos marinhos, como moluscos e algas. A sua dieta 
+                        é variada, abrangendo desde partículas em suspensão até pequenos animais e detritos, contribuindo para a ciclagem de nutrientes 
+                        nos oceanos.
+                        Reprodução e regeneração são processos notáveis em equinodermos. Muitas espécies têm a capacidade notável de regenerar partes 
+                        do corpo perdidas, incluindo braços e órgãos internos. A reprodução pode ocorrer tanto sexualmente, com a liberação de gametas 
+                        na água, quanto assexuadamente, através da divisão e regeneração.
+                        Os equinodermos, embora muitas vezes incompreendidos, são criaturas notáveis que desempenham um papel crucial na ecologia 
+                        marinha. A sua diversidade e habilidades adaptativas continuam a intrigar cientistas e apaixonar entusiastas da vida marinha, 
+                        destacando a importância de preservar essas espécies para a saúde e equilíbrio dos oceanos.</p>
+                    </div>
+                    <div id="imagens">
+                        <div class="imagem">
+                            <img src="images/estrela.jpg" alt="">
+                            <div class="texto-imagem">
+                                <h3>Estrelas-do-mar</h3>
+                                <p>As estrelas-do-mar, exibem a sua elegância radiante e braços delicadamente entrelaçados.</p>
+                                <button onclick="togglePopup('popup7')">Saber Mais</button>
+                            </div>
+                        </div>
+                
+                        <div class="imagem">
+                            <img src="images/ourico.jpg" alt="">
+                            <div class="texto-imagem">
+                                <h3>Ouriços-do-mar</h3>
+                                <p>Os ouriços-do-mar, possuem corpos esféricos adornados por espinhos móveis e desempenham um papel vital nos ecossistemas marinhos</p>
+                                <button onclick="togglePopup('popup8')">Saber Mais</button>
+                            </div>
+                        </div>
+                
+                        <div class="imagem">
+                            <img src="images/pepino.jpg" alt="">
+                            <div class="texto-imagem">
+                                <h3>Pepinos-do-mar</h3>
+                                <p>Os pepinos-do-mar, possuem corpos cilíndricos e tentáculos delicados,</p>
+                                <button onclick="togglePopup('popup9')">Saber Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="overlay" onclick="closePopup()"></div>
+
+                    <div id="popup7" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Estrelas-do-mar</h3>
+                            <p>As estrelas-do-mar são animais marinhos fascinantes da classe Asteroidea. Com corpos simetricamente radiais, 
+                            muitas têm cinco braços, embora haja variações. O seu sistema hidrovascular permite movimentação lenta por meio de pés 
+                            ambulacrários. A diversidade de cores e padrões é notável, com algumas espécies, como a estrela-do-mar azul, acrescentando 
+                            beleza aos recifes de coral. Alimentam-se de uma variedade de presas, utilizando um estômago eglanular para digestão externa. 
+                            A capacidade regenerativa é notável, permitindo a regeneração de braços perdidos. As estrelas-do-mar desempenham papéis 
+                            essenciais nos ecossistemas marinhos, sendo tanto uma maravilha da natureza quanto fundamentais para a saúde dos oceanos.</p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/asterias-rubens.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Asterias rubens</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/pisaster-ochraceus.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Pisaster ochraceus</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/linckia-laevigata.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Linckia laevigata</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+
+                    <div id="popup8" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Ouriços-do-mar</h3>
+                            <p>Os ouriços-do-mar, membros da classe Echinoidea, são animais marinhos notáveis encontrados em oceanos globais. 
+                            Com corpos esféricos e espinhos móveis, proporcionam proteção contra predadores. A sua boca na parte inferior é 
+                            adaptada para pastar algas e organismos. A reprodução envolve a liberação de gametas na água. Além de sua importância 
+                            ecológica, os ouriços-do-mar contribuem para a saúde de recifes de coral e oferecem abrigo após a morte. Apesar de sua 
+                            aparente simplicidade, revelam uma complexidade fascinante na anatomia e comportamento, destacando o seu papel vital nos 
+                            ecossistemas marinhos.<p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/strongylocentrotus-purpuratus.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Strongylocentrotus purpuratus</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/echinocardium-cordatum.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Echinocardium cordatum</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/Clypeasteroida.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Clypeasteroida</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+                    <div id="popup9" class="popup">
+                        <section class="Salmonidae">
+                            <h3>Pepinos-do-mar</h3>
+                            <p>Os pepinos-do-mar, pertencentes à classe Holothuroidea, são animais marinhos notáveis com corpos alongados e 
+                            tentáculos ao redor da boca. A sua aparência varia em formas e cores, apresentando uma diversidade estética. 
+                            Estes animais desempenham um papel essencial na ciclagem de nutrientes nos oceanos, alimentando-se de detritos e 
+                            contribuindo para a decomposição. A sua reprodução pode ser sexual ou assexuada, com algumas espécies liberando gametas 
+                            na água. Apesar de menos conhecidos, os pepinos-do-mar são fundamentais para a saúde dos ecossistemas marinhos, 
+                            destacando-se por sua adaptabilidade e contribuições ecológicas.</p>
+                    
+                            <div class="row">
+                                <div class="Salmonidae-col">
+                                    <img src="images/holothuria-leucospilota.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Holothuria leucospilota</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/actinopyga-echinites.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Actinopyga echinites</h3>
+                                    </div>
+                                </div>
+                                <div class="Salmonidae-col">
+                                    <img src="images/cucumaria-frondosa.jpg" alt="">
+                                    <div class="layer">
+                                        <h3>Cucumaria frondosa</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <button onclick="closePopup()">Fechar</button>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="algas" id="algas">
+            <div class="topic-container">
+                <img src="images/algas.jpg" alt="Algas">
+                <div class="text-box">
+                    <h2>Algas</h2>
+                    <p>As algas representam um grupo diversificado de organismos autotróficos fotossintetizantes que desempenham papéis 
+                    cruciais nos ecossistemas aquáticos.</p>
+                </div>
+            </div>
+            <section class="penipedes">
+                <div class="row">
+                    <div class="penipedes-col">
+                        <img src="images/algasvermelhas.jpg" alt="">
+                        <h3>Algas Vermelhas</h3>
+                        <p>As algas vermelhas, podem ser encontradas em profundidades variadas, elas contêm pigmentos, como a ficobilina, 
+                        que lhes dá uma coloração avermelhada.</p>
+                    </div>
+                    <div class="penipedes-col">
+                        <img src="images/algascastanhas.jpg" alt="">
+                        <h3>Algas Castanhas</h3>
+                        <p>As algas castanhas, predominantes do filo Phaeophyta, incluem algumas das algas de maior porte, como as kelps. 
+                        São encontradas em águas mais frias.</p>
+                    </div>
+                    <div class="penipedes-col">
+                        <img src="images/algasverdes.jpg" alt="">
+                        <h3>Algas Verdes</h3>
+                        <p>As algas verdes, pertencem a um grupo diversificado de algas que contêm clorofila, o pigmento verde responsável 
+                        pela fotossíntese. Podem ser unicelulares ou multicelulares.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="relacoes" id="relacoes">
+            <div class="topic-container">
+                <img src="images/relacoes.jpg" alt="Relações Ecológicas">
+                <div class="text-box">
+                    <h2>Relações Ecológicas</h2>
+                    <p>As relações ecológicas, são essenciais para a sobrevivência e evolução das espécies marinhas, abrangem desde a intensa 
+                    competição por recursos limitados até às formas de cooperação e dependência.</p>
+                </div>
+            </div>
+            <section class="relacoes-intra" id="relacoes-intra">
+                <h2>Relações Intraespecíficas</h2>
+                <div id="competicao">
+                    <h3>Competição por recursos</h3>
+                    <p>Nos ambientes marinhos existe uma busca incessante por recursos escassos.
+                    Seja disputando território, alimento ou parceiros reprodutivos, as criaturas marinhas desenvolveram 
+                    estratégias para garantir a sua sobrevivência e sucesso reprodutivo.</p>
+                    <table class="tabela-relacoes">
+                        <thead>
+                            <tr>
+                                <td>Espécie Marinha</td>
+                                <td>Recurso Disputado</td>
+                                <td>Estratégias de Competição</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Leão-Marinho<br>(Zalphus californianous)</td>
+                                <td>Espaço na praia</td>
+                                <td>Disputas territoriais e<br>vocalizações intimidadoras</td>
+                            </tr>
+                            <tr>
+                                <td>Caranguejo-Ermita<br>(Paguroidea)</td>
+                                <td>Conchas Disponíveis</td>
+                                <td>Competição por conchas<br>adequadas ao seu tamanho</td>
+                            </tr>
+                            <tr>
+                                <td>Golfinho Nariz-de-Garrafa<br>(Tursiops truncatus)</td>
+                                <td>Alimento</td>
+                                <td>Estratégias de caça<br>cooperativa em cardumes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="solucoes">
+                    <h3>Comportamento Reprodutivo</h3>
+                    <p>O comportamento reprodutivo na vida marinha é bastante diversificado,
+                    desde as danças de acasalamento até comportamentos parentais dedicados, cada
+                    espécie desenvolveu estratégias únicas para garantir a continuação da sua linhagem.</p>
+
+                    <ol>
+                        <li>
+                          <h3>Peixe-Palhaço (<i>Amphiprionidae</i>)</h3>
+                          <p>O corte nupcial envolve danças coordenadas entre o macho e a fêmea, enquanto a fêmea 
+                            escolhe um parceiro com base na saúde da anémona onde vivem. O macho torna-se responsável
+                            pelos ovos após a desova.</p>
+                        </li>
+                        <li>
+                          <h3>Cavalos-Marinhos (<i>Hippocampus</i>)</h3>
+                          <p>Em muitas espécies de cavalos-marinhos, é o macho que fica grávido, recebendo os ovos numa bolsa incubadora. 
+                            Durante o parto, ele contrai a bolsa e libera as crias já formadas.</p>
+                        </li>
+                        <li>
+                          <h3>Lula-de-Humboldt (<i>Dosidicus gigas</i>)</h3>
+                          <p>As lulas-de-Humboldt formam agregações para acasalamento. Os machos competem para fertilizar os
+                            ovos das fêmeas e o acasalamento geralmente ocorre em águas mais profundas.</p>
+                        </li>
+                        <li>
+                          <h3>Estrela-do-Mar (<i>Asteroidea</i>)</h3>
+                          <p>Algumas estrelas-do-mar têm a capacidade de se regenerar a partir de partes do corpo, 
+                            incluindo órgãos reprodutivos. Isso permite que uma estrela-do-mar regenere e crie mais de si mesma.</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section class="relacoes-intra" id="relacoes-inter">
+                <h2>Relações Interespecíficas</h2>
+                <div>
+                    <h3>Predação e Alimentação</h3>
+                    <p>As interações predatórias são fundamentais nos ecossistemas marinhos, onde
+                    várias espécies dependem da predação para alimentação. Isto inclui cadeias alimentares complexas 
+                    e adaptações evolutivas para caça e defesa.</p>
+                    <table class="tabela-relacoes">
+                        <thead>
+                            <tr>
+                                <td>Espécie Marinha</td>
+                                <td>Presa</td>
+                                <td>Estratégias de Caça</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tubarão-martelo<br>(Sphyrnidae)</td>
+                                <td>Raias e Peixes</td>
+                                <td>Utiliza a forma da cabeça para<br>aumentar a eficácia ao capturar<br>presas no fundo do oceano.</td>
+                            </tr>
+                            <tr>
+                                <td>Caranguejo Boxeador<br>(Lybia tessellata )</td>
+                                <td>Corais e Anémonas</td>
+                                <td>Utiliza as garras para colher<br>pedaços de corais e anémonas<br>para se defender e alimentar.</td>
+                            </tr>
+                            <tr>
+                                <td>Lula Colossal<br>(Mesonychoteuthis hamiltoni)</td>
+                                <td>Peixes e Cefalópodes</td>
+                                <td>Utiliza os tentáculos extensos<br>para capturar presas em grandes<br>profundidades.</td>
+                            </tr>
+                            <tr>
+                                <td>Tubarão-Branco<br>(Carcharodon carcharias)</td>
+                                <td>Focas e Pinguins</td>
+                                <td>Ataques de surpresa nas áreas<br>de reprodução e descanço,<br>utilizando a emboscada para<br>capturar presas menos ágeis.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <h3>Simbiose</h3>
+                    <p>As relações simbióticas são interações íntimas entre diferentes espécies. A simbiose é dividida 
+                    em Mutualismo, Comensalismo e Parasitismo.</p>
+                    <table class="tabela-relacoes">
+                        <thead>
+                            <tr>
+                                <td>Espécie A</td>
+                                <td>Espécie B</td>
+                                <td>Tipo de Simbiose</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Peixe-Limpador<br>(Labroides spp.)</td>
+                                <td>Tubarões e outros<br>grandes peixes</td>
+                                <td>Mutualismo. Remove parasitas<br>e detritos dos dentes e das<br>branquias de peixes maiores,<br>obtendo alimento em troca.</td>
+                            </tr>
+                            <tr>
+                                <td>Cracas<br>(Cirripedia)</td>
+                                <td>Baleias e<br>Tartarugas</td>
+                                <td>Comensalismo. As Cracas<br>fixam-se externamente ao<br>casco de baleias e<br>tartarugas, obtendo
+                                <br>transporte e alimentação<br>filtrando partículas da água.</td>
+                            </tr>
+                            <tr>
+                                <td>Isópode<br>(Cymothoa exigua)</td>
+                                <td>Peixes</td>
+                                <td>Parasitismo. O isópode<br>fixa-se à língua de certos<br>peixes, substituindo-a e<br>alimentado-se do sangue do peixe</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+        
+        
+        <script src="js/script.js"></script>
+        <script src="js/popup.js"></script>
+		<footer>
+		    <p>Vida marinha - 2023/24</p>
+	    </footer>
+	</body>
+</html>
