@@ -8,7 +8,7 @@
 - [&Aacute;lgebra Linear e Geometria Anal&iacute;tica](https://github.com/joaodmartins/LECI_1ano/tree/master/1semestre/ALGA)
 - [C&aacute;lculo - I](https://github.com/joaodmartins/LECI_1ano/tree/master/1semestre/C1)
 
-### [2º Semestre](https://github.com/joaodmartins/LECI_1ano/tree/master/1ano/2semestre)
+### [2º Semestre](https://github.com/joaodmartins/LECI_1ano/tree/master/2semestre)
 
 - [Programação Orientada a Objetos](https://github.com/joaodmartins/LECI_1ano/tree/master/2semestre/POO)
 - [Laboratórios de Informática](https://github.com/joaodmartins/LECI_1ano/tree/master/2semestre/LI)
