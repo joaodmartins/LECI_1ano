@@ -25,5 +25,6 @@ public class FileReaderTest {
             if (word.endsWith("s"))
                 System.out.println(word);
         words.removeIf(word -> !word.matches("^[a-zA-Záàãâéẽêíóõôúç]+$"));
+        input.close();
     }
 }
