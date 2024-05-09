@@ -1,0 +1,15 @@
+|DrinksFSM
+C => nState.OUTPUTSELECT
+C => nState.OUTPUTSELECT
+C => comb_process.IN0
+C => Selector1.IN5
+C => Selector2.IN5
+C => Selector4.IN5
+V => nState.DATAA
+V => comb_process.IN1
+V => nState.DATAA
+reset => pState~3.DATAIN
+clk => pState~1.DATAIN
+drink <= drink.DB_MAX_OUTPUT_PORT_TYPE
+
+

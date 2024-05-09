@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -3.046
+TNS   : -90.633
+
+Type  : Slow 1200mV 85C Model Setup 'DrinksFSM:drink_core|pState.S5'
+Slack : -1.669
+TNS   : -8.924
+
+Type  : Slow 1200mV 85C Model Setup 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : -0.541
+TNS   : -2.431
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.577
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DrinksFSM:drink_core|pState.S5'
+Slack : 0.620
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : 0.667
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : -3.228
+TNS   : -3.228
+
+Type  : Slow 1200mV 85C Model Removal 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : 3.698
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : -1.285
+TNS   : -7.710
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DrinksFSM:drink_core|pState.S5'
+Slack : 0.461
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -2.705
+TNS   : -80.127
+
+Type  : Slow 1200mV 0C Model Setup 'DrinksFSM:drink_core|pState.S5'
+Slack : -1.383
+TNS   : -7.367
+
+Type  : Slow 1200mV 0C Model Setup 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : -0.432
+TNS   : -1.824
+
+Type  : Slow 1200mV 0C Model Hold 'DrinksFSM:drink_core|pState.S5'
+Slack : 0.510
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.522
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : -2.889
+TNS   : -2.889
+
+Type  : Slow 1200mV 0C Model Removal 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : 3.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : -1.285
+TNS   : -7.710
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DrinksFSM:drink_core|pState.S5'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -0.913
+TNS   : -26.308
+
+Type  : Fast 1200mV 0C Model Setup 'DrinksFSM:drink_core|pState.S5'
+Slack : -0.305
+TNS   : -1.339
+
+Type  : Fast 1200mV 0C Model Setup 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.262
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DrinksFSM:drink_core|pState.S5'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : -1.442
+TNS   : -1.442
+
+Type  : Fast 1200mV 0C Model Removal 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : 2.138
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -38.157
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:sw_debounce|s_pulsedOut'
+Slack : -1.000
+TNS   : -6.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DebounceUnit:sw_debounce|s_dirtyIn'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DrinksFSM:drink_core|pState.S5'
+Slack : 0.344
+TNS   : 0.000
+
+------------------------------------------------------------

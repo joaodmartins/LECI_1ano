@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "cntRst",
+					"strict" : false
+				},
+				{
+					"name" : "cntEnb",
+					"strict" : false
+				},
+				{
+					"name" : "regEnb",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "laprst",
+					"strict" : false
+				},
+				{
+					"name" : "statop",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

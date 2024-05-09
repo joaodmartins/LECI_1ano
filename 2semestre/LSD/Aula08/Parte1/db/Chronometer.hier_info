@@ -1,0 +1,27 @@
+|ControlUnit
+clk => fstate~1.DATAIN
+reset => reg_fstate.CLEARED.OUTPUTSELECT
+reset => reg_fstate.STARTED.OUTPUTSELECT
+reset => reg_fstate.STOPPED.OUTPUTSELECT
+reset => reg_fstate.LAPVIEW.OUTPUTSELECT
+reset => cntRst.OUTPUTSELECT
+reset => cntEnb.OUTPUTSELECT
+reset => regEnb.OUTPUTSELECT
+statop => process_1.IN0
+statop => reg_fstate.OUTPUTSELECT
+statop => reg_fstate.OUTPUTSELECT
+statop => Selector1.IN2
+statop => Selector0.IN1
+statop => process_1.IN0
+laprst => reg_fstate.OUTPUTSELECT
+laprst => reg_fstate.OUTPUTSELECT
+laprst => process_1.IN1
+laprst => Selector1.IN3
+laprst => Selector3.IN3
+laprst => process_1.IN1
+laprst => Selector3.IN1
+cntRst <= cntRst.DB_MAX_OUTPUT_PORT_TYPE
+cntEnb <= cntEnb.DB_MAX_OUTPUT_PORT_TYPE
+regEnb <= regEnb.DB_MAX_OUTPUT_PORT_TYPE
+
+
