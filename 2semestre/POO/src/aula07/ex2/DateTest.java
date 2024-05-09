@@ -6,7 +6,7 @@ public class DateTest {
     public static void main(String[] args) {
         Scanner sin = new Scanner(System.in);
 
-        mainLoop:
+        mainloop:
         while (true) {
             System.out.print("Class to test (0-Quit;1-DateYMD;2-DateND): ");
             int classoption = sin.nextInt();
@@ -14,11 +14,10 @@ public class DateTest {
             switch (classoption) {
                 case 0 -> {
                     sin.close();
-                    break mainLoop;
+                    break mainloop;
                 }
                 case 1 -> {
                     DateYMD date = null;
-                    class1Loop:
                     while (true) {
                         System.out.println("Date operations:");
                         System.out.println("1 - Create date");
@@ -31,7 +30,6 @@ public class DateTest {
                         int option = sin.nextInt();
                         if (option == 0)
                             break;
-                        class1Switch:
                         switch (option) {
                             case 1 -> {
                                 System.out.print("Day: ");
@@ -83,7 +81,6 @@ public class DateTest {
                 }
                 case 2 -> {
                     DateND date = null;
-                    class2Loop:
                     while (true) {
                         System.out.println("Date operations:");
                         System.out.println("1 - Create date");
@@ -96,7 +93,6 @@ public class DateTest {
                         int option = sin.nextInt();
                         if (option == 0)
                             break;
-                        class2Switch:
                         switch (option) {
                             case 1 -> {
                                 System.out.print("Day: ");
