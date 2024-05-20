@@ -1,7 +1,5 @@
-package aula11.ex2;
-
-import java.util.LinkedList;
 import java.util.List;
+import java.util.ArrayList;
 
 public class GradebookTester {
     public static void main(String[] args) {
@@ -9,10 +7,10 @@ public class GradebookTester {
         Gradebook gradebook = new Gradebook();
 
         // Load the student data from a text file
-        gradebook.load("C:\\Users\\Utilizador\\Desktop\\LECI_1ano\\2semestre\\POO\\src\\aula11\\ex2\\alunos.txt");
+        gradebook.load("alunos.txt");
 
         // Add a new student to the collection
-        Student newStudent = new Student("Johny May", new LinkedList<>(List.of(10.0, 15.0, 19.0)));
+        Student newStudent = new Student("Johny May", new ArrayList<>(List.of(10.0, 15.0, 19.0)));
         gradebook.addStudent(newStudent);
 
         // Remove a student from the collection

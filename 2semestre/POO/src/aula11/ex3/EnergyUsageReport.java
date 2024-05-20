@@ -48,6 +48,7 @@ public class EnergyUsageReport {
     }
 
     public void generateReport(String path) throws IOException {
+        System.out.println(Path.of(path));
         for (Customer customer : customers) {
             Files.writeString(Path.of(path), String.format("Customer ID: %d%nTotal usage: %.1f%n%n", customer.getCustomerId(), calculateTotalUsage(customer.getCustomerId())), (new File(path)).exists() ? java.nio.file.StandardOpenOption.APPEND : java.nio.file.StandardOpenOption.CREATE);
         }

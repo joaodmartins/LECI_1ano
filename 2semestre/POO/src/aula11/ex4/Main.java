@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         FlightManager fm = new FlightManager();
 
-        fm.loadCompanies("datafiles/aula11/ex4/companhias.txt");
-        fm.loadFlights("datafiles/aula11/ex4/voos.txt");
+        fm.loadCompanies("C:\\Users\\Utilizador\\Desktop\\LECI_1ano\\2semestre\\POO\\src\\aula11\\ex4\\voos.txt");
+        fm.loadFlights("C:\\Users\\Utilizador\\Desktop\\LECI_1ano\\2semestre\\POO\\src\\aula11\\ex4\\voos.txt");
 
         fm.buildTable();
         System.out.println(fm.getTable());
@@ -16,6 +16,6 @@ public class Main {
         fm.buildFlightsNTable();
         System.out.println(fm.getFlightsNTable());
 
-        fm.storeTable("datafiles/aula11/ex4/Infopublico.txt");
+        fm.storeTable("C:\\Users\\Utilizador\\Desktop\\LECI_1ano\\2semestre\\POO\\src\\aula11\\ex4\\Infopublico.txt");
     }
 }
