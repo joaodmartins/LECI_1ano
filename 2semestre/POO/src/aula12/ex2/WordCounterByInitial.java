@@ -22,8 +22,13 @@ public class WordCounterByInitial {
                 return sb.toString();
             }
         };
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("File Path: ");
+        String filepath = sc.nextLine();
+        sc.close();
 
-        Arrays.stream(Files.readString(Path.of((new Scanner(System.in)).nextLine()))
+        Arrays.stream(Files.readString(Path.of(filepath))
                         .split("[\\s.,:'‘’;?!\\-*{}=+&/()\\[\\]”“\"]+"))
                 .filter(word -> word.length() > 2)
                 .map(String::toLowerCase)

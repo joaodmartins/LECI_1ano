@@ -14,7 +14,7 @@ public class Main {
         TreeSet<String> titles = new TreeSet<>();
 
         List<Movie> unsortedMovies = new ArrayList<>();
-        Scanner reader = new Scanner(new FileReader("datafiles/aula12/movies.txt"));
+        Scanner reader = new Scanner(new FileReader("C:\\Users\\Utilizador\\Desktop\\LECI_1ano\\2semestre\\POO\\src\\aula12\\movies.txt"));
         reader.nextLine();
         while (reader.hasNextLine()) {
             String[] line = reader.nextLine().split("\t");
@@ -45,10 +45,11 @@ public class Main {
         String genre = UserInput.input(new Scanner(System.in), "Genre: ");
         movies.stream().filter(movie -> movie.genre().equalsIgnoreCase(genre) && movie.score() > 60).forEach(movie -> {
             try {
-                Files.writeString(Path.of("datafiles/aula12/myselection.txt"), movie.toString());
+                Files.writeString(Path.of("C:\\1Users\\Utilizador\\Desktop\\LECI_1ano\\2semestre\\POO\\src\\aula12\\myselection.txt"), movie.toString());
             } catch (IOException e) {
                 e.printStackTrace();
             }
         });
+        reader.close();
     }
 }

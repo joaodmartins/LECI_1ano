@@ -9,7 +9,11 @@ import java.util.Scanner;
 
 public class DifferentWordCounter {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner reader = new Scanner(new FileReader((new Scanner(System.in)).nextLine()));
+        Scanner sc = new Scanner(System.in);
+        System.out.println("File Path: ");
+        String filepath = sc.nextLine();
+        sc.close();
+        Scanner reader = new Scanner(new FileReader(filepath));
         List<String> words = new ArrayList<>();
 
         while (reader.hasNext()) words.add(reader.next());
@@ -18,5 +22,6 @@ public class DifferentWordCounter {
 
         System.out.println("Number of words: " + words.size());
         System.out.println("Number of different words: " + differentWords.size());
+        reader.close();
     }
 }
